@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Componente Sección de Contenido</title>
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <link rel="stylesheet" href="../assets/css/components/content/content.css">
+    <style>
+        .component-container {
+            margin: 2rem 0;
+            padding: 2rem;
+            border: 1px solid var(--color-light-dark);
+            border-radius: var(--border-radius-md);
+        }
+        
+        .component-title {
+            margin-bottom: 1rem;
+            color: var(--color-primary);
+        }
+        
+        .component-description {
+            margin-bottom: 2rem;
+            color: var(--text-medium);
+        }
+        
+        /* Estilos para simular imágenes */
+        .placeholder-image {
+            background-color: var(--color-light-dark);
+            height: 200px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--text-white);
+            border-radius: var(--border-radius-md);
+        }
+    </style>
+</head>
+<body>
+    <div class="component-container">
+        <h2 class="component-title">Sección de Contenido - Variante 1: Estándar</h2>
+        <p class="component-description">Sección de contenido básica con título, subtítulo y texto.</p>
+        
+        <!-- Sección de Contenido Estándar -->
+        <section class="content-section">
+            <div class="content-section__container">
+                <header class="content-section__header">
+                    <h2 class="content-section__title">Nuestros Servicios</h2>
+                    <p class="content-section__subtitle">Descubre cómo podemos ayudarte a alcanzar tus objetivos</p>
+                </header>
+                
+                <div class="content-section__body">
+                    <p class="content-section__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in dui mauris. Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitor. Ut in nulla enim. Phasellus molestie magna non est bibendum non venenatis nisl tempor.</p>
+                    
+                    <div class="placeholder-image content-section__image">Imagen de ejemplo</div>
+                    
+                    <p class="content-section__text">Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitor. Ut in nulla enim. Phasellus molestie magna non est bibendum non venenatis nisl tempor. Suspendisse dictum feugiat nisl ut dapibus. Mauris iaculis porttitor posuere.</p>
+                </div>
+            </div>
+        </section>
+    </div>
+    
+    <div class="component-container">
+        <h2 class="component-title">Sección de Contenido - Variante 2: Dos Columnas</h2>
+        <p class="component-description">Sección de contenido con disposición en dos columnas.</p>
+        
+        <!-- Sección de Contenido Dos Columnas -->
+        <section class="content-section content-section--two-columns">
+            <div class="content-section__container">
+                <header class="content-section__header">
+                    <h2 class="content-section__title">Nuestro Enfoque</h2>
+                    <p class="content-section__subtitle">Combinamos estrategia y creatividad para lograr resultados excepcionales</p>
+                </header>
+                
+                <div class="content-section__body">
+                    <div class="content-section__column">
+                        <h3>Estrategia</h3>
+                        <p class="content-section__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in dui mauris. Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitor.</p>
+                    </div>
+                    
+                    <div class="content-section__column">
+                        <h3>Implementación</h3>
+                        <p class="content-section__text">Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitor. Ut in nulla enim. Phasellus molestie magna non est bibendum non venenatis nisl tempor. Suspendisse dictum feugiat nisl ut dapibus.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    
+    <div class="component-container">
+        <h2 class="component-title">Sección de Contenido - Variante 3: Imagen a la Izquierda</h2>
+        <p class="component-description">Sección de contenido con imagen a la izquierda y texto a la derecha.</p>
+        
+        <!-- Sección de Contenido Imagen a la Izquierda -->
+        <section class="content-section content-section--image-left">
+            <div class="content-section__container">
+                <header class="content-section__header">
+                    <h2 class="content-section__title">Nuestra Historia</h2>
+                    <p class="content-section__subtitle">Conoce más sobre nuestro recorrido y valores</p>
+                </header>
+                
+                <div class="content-section__body">
+                    <div class="content-section__media">
+                        <div class="placeholder-image">Imagen a la izquierda</div>
+                    </div>
+                    
+                    <div class="content-section__content">
+                        <h3>Trayectoria de Éxito</h3>
+                        <p class="content-section__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in dui mauris. Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitor.</p>
+                        <p class="content-section__text">Ut in nulla enim. Phasellus molestie magna non est bibendum non venenatis nisl tempor. Suspendisse dictum feugiat nisl ut dapibus. Mauris iaculis porttitor posuere.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    
+    <div class="component-container">
+        <h2 class="component-title">Sección de Contenido - Variante 4: Imagen a la Derecha</h2>
+        <p class="component-description">Sección de contenido con texto a la izquierda e imagen a la derecha.</p>
+        
+        <!-- Sección de Contenido Imagen a la Derecha -->
+        <section class="content-section content-section--image-right">
+            <div class="content-section__container">
+                <header class="content-section__header">
+                    <h2 class="content-section__title">Nuestro Equipo</h2>
+                    <p class="content-section__subtitle">Profesionales dedicados a hacer realidad tu visión</p>
+                </header>
+                
+                <div class="content-section__body">
+                    <div class="content-section__media">
+                        <div class="placeholder-image">Imagen a la derecha</div>
+                    </div>
+                    
+                    <div class="content-section__content">
+                        <h3>Experiencia y Pasión</h3>
+                        <p class="content-section__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in dui mauris. Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitor.</p>
+                        <p class="content-section__text">Ut in nulla enim. Phasellus molestie magna non est bibendum non venenatis nisl tempor. Suspendisse dictum feugiat nisl ut dapibus. Mauris iaculis porttitor posuere.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    
+    <div class="component-container">
+        <h2 class="component-title">Sección de Contenido - Variante 5: Fondo de Color</h2>
+        <p class="component-description">Sección de contenido con fondo de color claro para destacar la información.</p>
+        
+        <!-- Sección de Contenido Fondo de Color -->
+        <section class="content-section content-section--colored">
+            <div class="content-section__container">
+                <header class="content-section__header">
+                    <h2 class="content-section__title">Nuestros Valores</h2>
+                    <p class="content-section__subtitle">Principios que guían nuestro trabajo diario</p>
+                </header>
+                
+                <div class="content-section__body">
+                    <p class="content-section__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in dui mauris. Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitor. Ut in nulla enim.</p>
+                    
+                    <div class="placeholder-image content-section__image">Imagen de valores</div>
+                    
+                    <p class="content-section__text">Phasellus molestie magna non est bibendum non venenatis nisl tempor. Suspendisse dictum feugiat nisl ut dapibus. Mauris iaculis porttitor posuere. Praesent id metus massa, ut blandit odio.</p>
+                </div>
+            </div>
+        </section>
+    </div>
+    
+    <div class="component-container">
+        <h2 class="component-title">Sección de Contenido - Variante 6: Destacada</h2>
+        <p class="component-description">Sección de contenido con fondo de color primario y texto en blanco para destacar información importante.</p>
+        
+        <!-- Sección de Contenido Destacada -->
+        <section class="content-section content-section--featured">
+            <div class="content-section__container">
+                <header class="content-section__header">
+                    <h2 class="content-section__title">¿Por qué Elegirnos?</h2>
+                    <p class="content-section__subtitle">Descubre lo que nos hace diferentes</p>
+                </header>
+                
+                <div class="content-section__body">
+                    <p class="content-section__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in dui mauris. Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitor. Ut in nulla enim.</p>
+                    
+                    <p class="content-section__text">Phasellus molestie magna non est bibendum non venenatis nisl tempor. Suspendisse dictum feugiat nisl ut dapibus. Mauris iaculis porttitor posuere. Praesent id metus massa, ut blandit odio.</p>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>

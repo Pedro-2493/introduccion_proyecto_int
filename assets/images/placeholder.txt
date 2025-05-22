@@ -1,0 +1,10 @@
+Este archivo es un marcador de posición para la carpeta de imágenes.
+En un proyecto real, aquí se almacenarían las imágenes utilizadas en el sitio web.
+
+La estructura de carpetas para imágenes podría organizarse de la siguiente manera:
+- logo/ (para logotipos e identidad visual)
+- icons/ (para iconos utilizados en la interfaz)
+- hero/ (para imágenes destacadas o de cabecera)
+- team/ (para fotos del equipo)
+- services/ (para imágenes relacionadas con servicios)
+- backgrounds/ (para fondos y texturas)

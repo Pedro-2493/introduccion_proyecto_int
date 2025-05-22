@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Componente Progress Bars</title>
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <link rel="stylesheet" href="../assets/css/components/progress-bars/progress-bars.css">
+    <style>
+        .component-container {
+            margin: 2rem 0;
+            padding: 2rem;
+            border: 1px solid var(--color-light-dark);
+            border-radius: var(--border-radius-md);
+        }
+        
+        .component-title {
+            margin-bottom: 1rem;
+            color: var(--color-primary);
+        }
+        
+        .component-description {
+            margin-bottom: 2rem;
+            color: var(--text-medium);
+        }
+
+        .progress-example {
+            margin: var(--spacing-lg) 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Componente Progress Bars</h1>
+        <p>Este componente muestra el progreso de una tarea o proceso, siguiendo la metodología BEM.</p>
+        
+        <!-- Variante 1: Progress Bar Estándar -->
+        <div class="component-container">
+            <h2 class="component-title">Variante 1: Progress Bar Estándar</h2>
+            <p class="component-description">Barra de progreso básica con diferentes porcentajes.</p>
+            
+            <div class="progress-example">
+                <div class="progress">
+                    <div class="progress__label">25% Completado</div>
+                    <div class="progress__bar">
+                        <div class="progress__fill" style="width: 25%;"></div>
+                    </div>
+                </div>
+                
+                <div class="progress">
+                    <div class="progress__label">50% Completado</div>
+                    <div class="progress__bar">
+                        <div class="progress__fill" style="width: 50%;"></div>
+                    </div>
+                </div>
+                
+                <div class="progress">
+                    <div class="progress__label">75% Completado</div>
+                    <div class="progress__bar">
+                        <div class="progress__fill" style="width: 75%;"></div>
+                    </div>
+                </div>
+                
+                <div class="progress">
+                    <div class="progress__label">100% Completado</div>
+                    <div class="progress__bar">
+                        <div class="progress__fill" style="width: 100%;"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Variante 2: Progress Bar con Colores -->
+        <div class="component-container">
+            <h2 class="component-title">Variante 2: Progress Bar con Colores</h2>
+            <p class="component-description">Barras de progreso con diferentes colores para diferentes tipos de información.</p>
+            
+            <div class="progress-example">
+                <div class="progress">
+                    <div class="progress__label">Progreso Primario</div>
+                    <div class="progress__bar">
+                        <div class="progress__fill progress__fill--primary" style="width: 60%;"></div>
+                    </div>
+                </div>
+                
+                <div class="progress">
+                    <div class="progress__label">Progreso Secundario</div>
+                    <div class="progress__bar">
+                        <div class="progress__fill progress__fill--secondary" style="width: 70%;"></div>
+                    </div>
+                </div>
+                
+                <div class="progress">
+                    <div class="progress__label">Progreso Acento</div>
+                    <div class="progress__bar">
+                        <div class="progress__fill progress__fill--accent" style="width: 40%;"></div>
+                    </div>
+                </div>
+                
+                <div class="progress">
+                    <div class="progress__label">Progreso Oscuro</div>
+                    <div class="progress__bar">
+                        <div class="progress__fill progress__fill--dark" style="width: 85%;"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Variante 3: Progress Bar con Porcentaje Visible -->
+        <div class="component-container">
+            <h2 class="component-title">Variante 3: Progress Bar con Porcentaje Visible</h2>
+            <p class="component-description">Barras de progreso que muestran el porcentaje dentro de la barra.</p>
+            
+            <div class="progress-example">
+                <div class="progress progress--percentage">
+                    <div class="progress__label">Descarga</div>
+                    <div class="progress__bar">
+                        <div class="progress__fill" style="width: 35%;">35%</div>
+                    </div>
+                </div>
+                
+                <div class="progress progress--percentage">
+                    <div class="progress__label">Carga</div>
+                    <div class="progress__bar">
+                        <div class="progress__fill" style="width: 65%;">65%</div>
+                    </div>
+                </div>
+                
+                <div class="progress progress--percentage">
+                    <div class="progress__label">Procesamiento</div>
+                    <div class="progress__bar">
+                        <div class="progress__fill" style="width: 90%;">90%</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Variante 4: Progress Bar Redondeada -->
+        <div class="component-container">
+            <h2 class="component-title">Variante 4: Progress Bar Redondeada</h2>
+            <p class="component-description">Barras de progreso con bordes redondeados para un estilo más suave.</p>
+            
+            <div class="progress-example">
+                <div class="progress progress--rounded">
+                    <div class="progress__label">Fase 1</div>
+                    <div class="progress__bar">
+                        <div class="progress__fill" style="width: 30%;"></div>
+                    </div>
+                </div>
+                
+                <div class="progress progress--rounded">
+                    <div class="progress__label">Fase 2</div>
+                    <div class="progress__bar">
+                        <div class="progress__fill" style="width: 60%;"></div>
+                    </div>
+                </div>
+                
+                <div class="progress progress--rounded">
+                    <div class="progress__label">Fase 3</div>
+                    <div class="progress__bar">
+                        <div class="progress__fill" style="width: 45%;"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Variante 5: Progress Bar con Pasos -->
+        <div class="component-container">
+            <h2 class="component-title">Variante 5: Progress Bar con Pasos</h2>
+            <p class="component-description">Barras de progreso que muestran pasos o etapas del proceso.</p>
+            
+            <div class="progress-example">
+                <div class="progress progress--steps">
+                    <div class="progress__step progress__step--completed">Paso 1</div>
+                    <div class="progress__step progress__step--completed">Paso 2</div>
+                    <div class="progress__step progress__step--active">Paso 3</div>
+                    <div class="progress__step">Paso 4</div>
+                    <div class="progress__step">Paso 5</div>
+                </div>
+                
+                <div class="progress progress--steps">
+                    <div class="progress__step progress__step--completed">Inicio</div>
+                    <div class="progress__step progress__step--completed">Revisión</div>
+                    <div class="progress__step progress__step--completed">Aprobación</div>
+                    <div class="progress__step progress__step--active">Finalización</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Componente Alertas</title>
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <link rel="stylesheet" href="../assets/css/components/alerts/alerts.css">
+    <style>
+        .component-container {
+            margin: 2rem 0;
+            padding: 2rem;
+            border: 1px solid var(--color-light-dark);
+            border-radius: var(--border-radius-md);
+        }
+        
+        .component-title {
+            margin-bottom: 1rem;
+            color: var(--color-primary);
+        }
+        
+        .component-description {
+            margin-bottom: 2rem;
+            color: var(--text-medium);
+        }
+
+        /* Estilos básicos para las alertas (solo para visualización) */
+        .alert {
+            padding: var(--spacing-md);
+            border-radius: var(--border-radius-sm);
+            margin-bottom: var(--spacing-md);
+        }
+
+        .alert--success {
+            background-color: #d4edda;
+            color: #155724;
+            border: 1px solid #c3e6cb;
+        }
+
+        .alert--error {
+            background-color: #f8d7da;
+            color: #721c24;
+            border: 1px solid #f5c6cb;
+        }
+
+        .alert--warning {
+            background-color: #fff3cd;
+            color: #856404;
+            border: 1px solid #ffeeba;
+        }
+
+        .alert--info {
+            background-color: #d1ecf1;
+            color: #0c5460;
+            border: 1px solid #bee5eb;
+        }
+
+        .alert--bordered {
+            border-width: 2px;
+        }
+
+        .alert--rounded {
+            border-radius: var(--border-radius-lg);
+        }
+
+        .alert--icon .alert__icon {
+            display: inline-block;
+            margin-right: var(--spacing-sm);
+            font-weight: bold;
+        }
+
+        .alert--dismissible {
+            position: relative;
+            padding-right: 4rem;
+        }
+
+        .alert--dismissible .alert__close {
+            position: absolute;
+            top: var(--spacing-md);
+            right: var(--spacing-md);
+            font-size: var(--font-size-lg);
+            font-weight: bold;
+            cursor: pointer;
+            background: none;
+            border: none;
+            color: inherit;
+        }
+
+        .alert--minimal {
+            background: none;
+            border-left-width: 4px;
+            border-right: none;
+            border-top: none;
+            border-bottom: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="component-container">
+        <h2 class="component-title">Alertas - Variante 1: Estándar</h2>
+        <p class="component-description">Alertas básicas para diferentes tipos de mensajes.</p>
+        
+        <!-- Alertas Estándar -->
+        <div class="alert alert--success">
+            <div class="alert__content">
+                <h4 class="alert__title">¡Operación exitosa!</h4>
+                <p class="alert__text">Los cambios se han guardado correctamente.</p>
+            </div>
+        </div>
+        
+        <div class="alert alert--error">
+            <div class="alert__content">
+                <h4 class="alert__title">Error</h4>
+                <p class="alert__text">No se pudo completar la operación. Por favor, inténtalo de nuevo.</p>
+            </div>
+        </div>
+        
+        <div class="alert alert--warning">
+            <div class="alert__content">
+                <h4 class="alert__title">Advertencia</h4>
+                <p class="alert__text">Esta acción no se puede deshacer. Procede con precaución.</p>
+            </div>
+        </div>
+        
+        <div class="alert alert--info">
+            <div class="alert__content">
+                <h4 class="alert__title">Información</h4>
+                <p class="alert__text">Tu suscripción se renovará automáticamente el próximo mes.</p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="component-container">
+        <h2 class="component-title">Alertas - Variante 2: Con Bordes</h2>
+        <p class="component-description">Alertas con bordes más pronunciados para mayor énfasis.</p>
+        
+        <!-- Alertas Con Bordes -->
+        <div class="alert alert--success alert--bordered">
+            <div class="alert__content">
+                <h4 class="alert__title">¡Operación exitosa!</h4>
+                <p class="alert__text">Los cambios se han guardado correctamente.</p>
+            </div>
+        </div>
+        
+        <div class="alert alert--error alert--bordered">
+            <div class="alert__content">
+                <h4 class="alert__title">Error</h4>
+                <p class="alert__text">No se pudo completar la operación. Por favor, inténtalo de nuevo.</p>
+            </div>
+        </div>
+        
+        <div class="alert alert--warning alert--bordered">
+            <div class="alert__content">
+                <h4 class="alert__title">Advertencia</h4>
+                <p class="alert__text">Esta acción no se puede deshacer. Procede con precaución.</p>
+            </div>
+        </div>
+        
+        <div class="alert alert--info alert--bordered">
+            <div class="alert__content">
+                <h4 class="alert__title">Información</h4>
+                <p class="alert__text">Tu suscripción se renovará automáticamente el próximo mes.</p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="component-container">
+        <h2 class="component-title">Alertas - Variante 3: Redondeadas</h2>
+        <p class="component-description">Alertas con bordes más redondeados para un aspecto más suave.</p>
+        
+        <!-- Alertas Redondeadas -->
+        <div class="alert alert--success alert--rounded">
+            <div class="alert__content">
+                <h4 class="alert__title">¡Operación exitosa!</h4>
+                <p class="alert__text">Los cambios se han guardado correctamente.</p>
+            </div>
+        </div>
+        
+        <div class="alert alert--error alert--rounded">
+            <div class="alert__content">
+                <h4 class="alert__title">Error</h4>
+                <p class="alert__text">No se pudo completar la operación. Por favor, inténtalo de nuevo.</p>
+            </div>
+        </div>
+        
+        <div class="alert alert--warning alert--rounded">
+            <div class="alert__content">
+                <h4 class="alert__title">Advertencia</h4>
+                <p class="alert__text">Esta acción no se puede deshacer. Procede con precaución.</p>
+            </div>
+        </div>
+        
+        <div class="alert alert--info alert--rounded">
+            <div class="alert__content">
+                <h4 class="alert__title">Información</h4>
+                <p class="alert__text">Tu suscripción se renovará automáticamente el próximo mes.</p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="component-container">
+        <h2 class="component-title">Alertas - Variante 4: Con Iconos</h2>
+        <p class="component-description">Alertas con iconos para reforzar visualmente el tipo de mensaje.</p>
+        
+        <!-- Alertas Con Iconos -->
+        <div class="alert alert--success alert--icon">
+            <span class="alert__icon">✓</span>
+            <div class="alert__content">
+                <h4 class="alert__title">¡Operación exitosa!</h4>
+                <p class="alert__text">Los cambios se han guardado correctamente.</p>
+            </div>
+        </div>
+        
+        <div class="alert alert--error alert--icon">
+            <span class="alert__icon">✕</span>
+            <div class="alert__content">
+                <h4 class="alert__title">Error</h4>
+                <p class="alert__text">No se pudo completar la operación. Por favor, inténtalo de nuevo.</p>
+            </div>
+        </div>
+        
+        <div class="alert alert--warning alert--icon">
+            <span class="alert__icon">!</span>
+            <div class="alert__content">
+                <h4 class="alert__title">Advertencia</h4>
+                <p class="alert__text">Esta acción no se puede deshacer. Procede con precaución.</p>
+            </div>
+        </div>
+        
+        <div class="alert alert--info alert--icon">
+            <span class="alert__icon">i</span>
+            <div class="alert__content">
+                <h4 class="alert__title">Información</h4>
+                <p class="alert__text">Tu suscripción se renovará automáticamente el próximo mes.</p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="component-container">
+        <h2 class="component-title">Alertas - Variante 5: Descartables</h2>
+        <p class="component-description">Alertas con botón para cerrarlas.</p>
+        
+        <!-- Alertas Descartables -->
+        <div class="alert alert--success alert--dismissible">
+            <div class="alert__content">
+                <h4 class="alert__title">¡Operación exitosa!</h4>
+                <p class="alert__text">Los cambios se han guardado correctamente.</p>
+            </div>
+            <button class="alert__close">×</button>
+        </div>
+        
+        <div class="alert alert--error alert--dismissible">
+            <div class="alert__content">
+                <h4 class="alert__title">Error</h4>
+                <p class="alert__text">No se pudo completar la operación. Por favor, inténtalo de nuevo.</p>
+            </div>
+            <button class="alert__close">×</button>
+        </div>
+        
+        <div class="alert alert--warning alert--dismissible">
+            <div class="alert__content">
+                <h4 class="alert__title">Advertencia</h4>
+                <p class="alert__text">Esta acción no se puede deshacer. Procede con precaución.</p>
+            </div>
+            <button class="alert__close">×</button>
+        </div>
+        
+        <div class="alert alert--info alert--dismissible">
+            <div class="alert__content">
+                <h4 class="alert__title">Información</h4>
+                <p class="alert__text">Tu suscripción se renovará automáticamente el próximo mes.</p>
+            </div>
+            <button class="alert__close">×</button>
+        </div>
+    </div>
+    
+    <div class="component-container">
+        <h2 class="component-title">Alertas - Variante 6: Minimalistas</h2>
+        <p class="component-description">Alertas con diseño minimalista, solo con borde izquierdo de color.</p>
+        
+        <!-- Alertas Minimalistas -->
+        <div class="alert alert--success alert--minimal">
+            <div class="alert__content">
+                <h4 class="alert__title">¡Operación exitosa!</h4>
+                <p class="alert__text">Los cambios se han guardado correctamente.</p>
+            </div>
+        </div>
+        
+        <div class="alert alert--error alert--minimal">
+            <div class="alert__content">
+                <h4 class="alert__title">Error</h4>
+                <p class="alert__text">No se pudo completar la operación. Por favor, inténtalo de nuevo.</p>
+            </div>
+        </div>
+        
+        <div class="alert alert--warning alert--minimal">
+            <div class="alert__content">
+                <h4 class="alert__title">Advertencia</h4>
+                <p class="alert__text">Esta acción no se puede deshacer. Procede con precaución.</p>
+            </div>
+        </div>
+        
+        <div class="alert alert--info alert--minimal">
+            <div class="alert__content">
+                <h4 class="alert__title">Información</h4>
+                <p class="alert__text">Tu suscripción se renovará automáticamente el próximo mes.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

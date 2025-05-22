@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <link rel="stylesheet" href="../assets/css/registro.css">
+    <title>Registro</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__container">
+            <h1 class="header__logo"> <a href="../index.html"><img src="../assets/images/Logo/icono_header.png"></a></h1>
+            <nav class="header__nav">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="../index.html" class="nav__link nav__link--active">Inicio</a></li>
+                    <li class="nav__item"><a href="login.html" class="nav__link">Login</a></li>
+                    <li class="nav__item"><a href="registro.html" class="nav__link">Registro</a></li>
+                    <li class="nav__item"><a href="contact.html" class="nav__link">contacto</a></li>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section>
+            <div class="registro-container">
+                <div class="registro-box">
+                    <h2>Crea Tu Cuenta</h2>
+
+                    <form action="procesar_registro.php" method="POST">
+
+                        <!-- Campo de Nombre Completo -->
+                        <div class="input-group">
+                            <label for="nombre_completo">Nombre Completo</label>
+                            <input type="text" id="nombre_completo" name="nombre_completo" required>
+                        </div>
+
+                        <!-- Campo de Número de Identificación -->
+                        <div class="input-group">
+                            <label for="num_identificacion">Número de Identificación</label>
+                            <input type="text" id="num_identificacion" name="num_identificacion" required>
+                        </div>
+
+                        <!-- Selección de Estudiante o Profesor -->
+                        <div class="input-group">
+                            <label for="rol">¿Eres Estudiante o Profesor?</label>
+                            <select id="rol" name="rol" required>
+                                <option value="estudiante">Estudiante</option>
+                                <option value="profesor">Profesor</option>
+                            </select>
+                        </div>
+
+                        <!-- Campo de Correo Electrónico -->
+                        <div class="input-group">
+                            <label for="email">Correo Electrónico</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+
+                        <!-- Campo de Ciudad -->
+                        <div class="input-group">
+                            <label for="ciudad">Ciudad</label>
+                            <input type="text" id="ciudad" name="ciudad" required>
+                        </div>
+
+                        <!-- Campo de Número Celular -->
+                        <div class="input-group">
+                            <label for="num_celular">Número Celular</label>
+                            <input type="text" id="num_celular" name="num_celular" required>
+                        </div>
+
+                        <!-- Botón de Registro -->
+                        <button type="submit" class="registro-btn">Registrarme</button>
+
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+     <footer class="footer">
+        <div class="footer__container">
+            <div class="footer__info">
+                <h3 class="footer__logo">Progreso y Gestion Para El desarrollo Local</h3>
+            </div>
+
+        
+
+            <div class="footer__contact">
+                <h4 class="footer__heading">Contacto</h4>
+                <address>
+                    <p>Email: pgdl@hotmail.com</p>
+                    <p>Teléfono: (315) 586-7790</p>
+                </address>
+            </div>
+        </div>
+
+        <div class="footer__bottom">
+            <p>&copy; 2025 PGDL. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

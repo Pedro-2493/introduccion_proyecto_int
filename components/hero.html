@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Componente Hero</title>
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <link rel="stylesheet" href="../assets/css/components/hero/hero.css">
+    <style>
+        .component-container {
+            margin: 2rem 0;
+            padding: 2rem;
+            border: 1px solid var(--color-light-dark);
+            border-radius: var(--border-radius-md);
+        }
+        
+        .component-title {
+            margin-bottom: 1rem;
+            color: var(--color-primary);
+        }
+        
+        .component-description {
+            margin-bottom: 2rem;
+            color: var(--text-medium);
+        }
+        
+        /* Estilos para simular imagen de fondo */
+        .placeholder-bg {
+            background-color: var(--color-dark-light);
+            color: var(--text-white);
+            padding: 2rem;
+            text-align: center;
+            margin-bottom: 1rem;
+            border-radius: var(--border-radius-sm);
+        }
+    </style>
+</head>
+<body>
+    <div class="component-container">
+        <h2 class="component-title">Hero - Variante 1: Estándar</h2>
+        <p class="component-description">Sección hero básica con título, texto y botón de llamada a la acción.</p>
+        
+        <!-- Hero Estándar -->
+        <section class="hero">
+            <div class="hero__container">
+                <h2 class="hero__title">Bienvenido a Mi Sitio</h2>
+                <p class="hero__text">Una plantilla moderna, limpia y adaptable para diferentes propósitos.</p>
+                <a href="#" class="hero__button">Comenzar Ahora</a>
+            </div>
+        </section>
+    </div>
+    
+    <div class="component-container">
+        <h2 class="component-title">Hero - Variante 2: Con Imagen de Fondo</h2>
+        <p class="component-description">Sección hero con imagen de fondo y superposición oscura para mejorar la legibilidad.</p>
+        
+        <!-- Hero Con Imagen de Fondo (simulado con color) -->
+        <div class="placeholder-bg">Aquí iría una imagen de fondo real</div>
+        <section class="hero hero--image">
+            <div class="hero__container">
+                <h2 class="hero__title">Descubre Nuevas Posibilidades</h2>
+                <p class="hero__text">Explora nuestras soluciones diseñadas para ayudarte a alcanzar tus objetivos.</p>
+                <a href="#" class="hero__button">Explorar Servicios</a>
+            </div>
+        </section>
+    </div>
+    
+    <div class="component-container">
+        <h2 class="component-title">Hero - Variante 3: Alineado a la Izquierda</h2>
+        <p class="component-description">Sección hero con contenido alineado a la izquierda, ideal para diseños asimétricos.</p>
+        
+        <!-- Hero Alineado a la Izquierda -->
+        <section class="hero hero--left-aligned">
+            <div class="hero__container">
+                <h2 class="hero__title">Soluciones Innovadoras</h2>
+                <p class="hero__text">Ofrecemos servicios personalizados que se adaptan a tus necesidades específicas.</p>
+                <a href="#" class="hero__button">Conocer Más</a>
+            </div>
+        </section>
+    </div>
+    
+    <div class="component-container">
+        <h2 class="component-title">Hero - Variante 4: Tema Oscuro</h2>
+        <p class="component-description">Sección hero con fondo oscuro y botón de acción destacado.</p>
+        
+        <!-- Hero Tema Oscuro -->
+        <section class="hero hero--dark">
+            <div class="hero__container">
+                <h2 class="hero__title">Diseño Elegante</h2>
+                <p class="hero__text">Soluciones modernas con un enfoque en la experiencia del usuario y la estética.</p>
+                <a href="#" class="hero__button">Ver Portafolio</a>
+            </div>
+        </section>
+    </div>
+    
+    <div class="component-container">
+        <h2 class="component-title">Hero - Variante 5: Fondo Degradado</h2>
+        <p class="component-description">Sección hero con fondo degradado entre colores primario y secundario.</p>
+        
+        <!-- Hero Fondo Degradado -->
+        <section class="hero hero--gradient">
+            <div class="hero__container">
+                <h2 class="hero__title">Creatividad Sin Límites</h2>
+                <p class="hero__text">Transformamos ideas en experiencias digitales memorables y efectivas.</p>
+                <a href="#" class="hero__button">Contactar</a>
+            </div>
+        </section>
+    </div>
+    
+    <div class="component-container">
+        <h2 class="component-title">Hero - Variante 6: Minimalista</h2>
+        <p class="component-description">Sección hero con diseño minimalista, ideal para sitios con enfoque en la simplicidad.</p>
+        
+        <!-- Hero Minimalista -->
+        <section class="hero hero--minimal">
+            <div class="hero__container">
+                <h2 class="hero__title">Simplicidad y Eficiencia</h2>
+                <p class="hero__text">Menos es más. Diseños limpios que comunican con claridad y precisión.</p>
+                <a href="#" class="hero__button">Descubrir</a>
+            </div>
+        </section>
+    </div>
+</body>
+</html>

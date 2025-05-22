@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Componente Cards</title>
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <link rel="stylesheet" href="../assets/css/components/cards/cards.css">
+    <style>
+        .component-container {
+            margin: 2rem 0;
+            padding: 2rem;
+            border: 1px solid var(--color-light-dark);
+            border-radius: var(--border-radius-md);
+        }
+        
+        .component-title {
+            margin-bottom: 1rem;
+            color: var(--color-primary);
+        }
+        
+        .component-description {
+            margin-bottom: 2rem;
+            color: var(--text-medium);
+        }
+        
+        /* Estilos para simular imágenes */
+        .placeholder-image {
+            background-color: var(--color-light-dark);
+            height: 200px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--text-white);
+        }
+    </style>
+</head>
+<body>
+    <div class="component-container">
+        <h2 class="component-title">Cards - Variante 1: Estándar</h2>
+        <p class="component-description">Tarjetas básicas con imagen, título, descripción y botón.</p>
+        
+        <!-- Card Grid Estándar -->
+        <div class="card-grid">
+            <article class="card">
+                <div class="placeholder-image card__image">Imagen</div>
+                <div class="card__content">
+                    <h3 class="card__title">Título de la Tarjeta</h3>
+                    <p class="card__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in dui mauris. Vivamus hendrerit arcu sed erat molestie vehicula.</p>
+                    <a href="#" class="card__button">Leer más</a>
+                </div>
+            </article>
+            
+            <article class="card">
+                <div class="placeholder-image card__image">Imagen</div>
+                <div class="card__content">
+                    <h3 class="card__title">Título de la Tarjeta</h3>
+                    <p class="card__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in dui mauris. Vivamus hendrerit arcu sed erat molestie vehicula.</p>
+                    <a href="#" class="card__button">Leer más</a>
+                </div>
+            </article>
+        </div>
+    </div>
+    
+    <div class="component-container">
+        <h2 class="component-title">Cards - Variante 2: Horizontal</h2>
+        <p class="component-description">Tarjetas con disposición horizontal, con la imagen a la izquierda y el contenido a la derecha.</p>
+        
+        <!-- Card Horizontal -->
+        <article class="card card--horizontal">
+            <div class="card__image-container">
+                <div class="placeholder-image card__image">Imagen</div>
+            </div>
+            <div class="card__content">
+                <h3 class="card__title">Título de la Tarjeta Horizontal</h3>
+                <p class="card__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in dui mauris. Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitor.</p>
+                <a href="#" class="card__button">Leer más</a>
+            </div>
+        </article>
+    </div>
+    
+    <div class="component-container">
+        <h2 class="component-title">Cards - Variante 3: Minimalista</h2>
+        <p class="component-description">Tarjetas con diseño minimalista, sin sombras y con borde sutil.</p>
+        
+        <!-- Card Grid Minimalista -->
+        <div class="card-grid">
+            <article class="card card--minimal">
+                <div class="placeholder-image card__image">Imagen</div>
+                <div class="card__content">
+                    <h3 class="card__title">Diseño Minimalista</h3>
+                    <p class="card__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in dui mauris. Vivamus hendrerit arcu sed erat molestie vehicula.</p>
+                    <a href="#" class="card__button">Leer más</a>
+                </div>
+            </article>
+            
+            <article class="card card--minimal">
+                <div class="placeholder-image card__image">Imagen</div>
+                <div class="card__content">
+                    <h3 class="card__title">Diseño Minimalista</h3>
+                    <p class="card__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in dui mauris. Vivamus hendrerit arcu sed erat molestie vehicula.</p>
+                    <a href="#" class="card__button">Leer más</a>
+                </div>
+            </article>
+        </div>
+    </div>
+    
+    <div class="component-container">
+        <h2 class="component-title">Cards - Variante 4: Con Color</h2>
+        <p class="component-description">Tarjetas con fondo de color y texto en blanco para destacar información.</p>
+        
+        <!-- Card Grid Con Color -->
+        <div class="card-grid">
+            <article class="card card--colored">
+                <div class="card__content">
+                    <h3 class="card__title">Tarjeta Destacada</h3>
+                    <p class="card__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in dui mauris. Vivamus hendrerit arcu sed erat molestie vehicula.</p>
+                    <a href="#" class="card__button">Leer más</a>
+                </div>
+            </article>
+            
+            <article class="card card--colored">
+                <div class="card__content">
+                    <h3 class="card__title">Tarjeta Destacada</h3>
+                    <p class="card__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in dui mauris. Vivamus hendrerit arcu sed erat molestie vehicula.</p>
+                    <a href="#" class="card__button">Leer más</a>
+                </div>
+            </article>
+        </div>
+    </div>
+    
+    <div class="component-container">
+        <h2 class="component-title">Cards - Variante 5: Con Ícono</h2>
+        <p class="component-description">Tarjetas centradas con íconos en lugar de imágenes.</p>
+        
+        <!-- Card Grid Con Ícono -->
+        <div class="card-grid">
+            <article class="card card--icon">
+                <div class="card__icon">🚀</div>
+                <div class="card__content">
+                    <h3 class="card__title">Innovación</h3>
+                    <p class="card__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in dui mauris. Vivamus hendrerit arcu sed erat molestie vehicula.</p>
+                    <a href="#" class="card__button">Leer más</a>
+                </div>
+            </article>
+            
+            <article class="card card--icon">
+                <div class="card__icon">💡</div>
+                <div class="card__content">
+                    <h3 class="card__title">Creatividad</h3>
+                    <p class="card__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in dui mauris. Vivamus hendrerit arcu sed erat molestie vehicula.</p>
+                    <a href="#" class="card__button">Leer más</a>
+                </div>
+            </article>
+        </div>
+    </div>
+    
+    <div class="component-container">
+        <h2 class="component-title">Cards - Variante 6: Con Superposición</h2>
+        <p class="component-description">Tarjetas con texto superpuesto sobre la imagen con gradiente para mejorar la legibilidad.</p>
+        
+        <!-- Card Grid Con Superposición -->
+        <div class="card-grid">
+            <article class="card card--overlay">
+                <div class="placeholder-image card__image">Imagen</div>
+                <div class="card__content">
+                    <h3 class="card__title">Diseño con Superposición</h3>
+                    <p class="card__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <a href="#" class="card__button">Leer más</a>
+                </div>
+            </article>
+            
+            <article class="card card--overlay">
+                <div class="placeholder-image card__image">Imagen</div>
+                <div class="card__content">
+                    <h3 class="card__title">Diseño con Superposición</h3>
+                    <p class="card__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <a href="#" class="card__button">Leer más</a>
+                </div>
+            </article>
+        </div>
+    </div>
+</body>
+</html>

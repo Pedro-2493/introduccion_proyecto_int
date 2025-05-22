@@ -1,0 +1,209 @@
+/* ===== ESTILOS ESPECÍFICOS PARA LA PÁGINA DE CONTACTO ===== */
+
+/* Contact Section */
+.contact {
+    padding: var(--spacing-xxl) 0;
+}
+
+.contact__container {
+    max-width: var(--container-max-width);
+    margin: 0 auto;
+    padding: 0 var(--container-padding);
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--spacing-xl);
+}
+
+.contact__info {
+    flex: 1;
+    min-width: 300px;
+}
+
+.contact__title {
+    margin-bottom: var(--spacing-md);
+}
+
+.contact__text {
+    color: var(--text-medium);
+    margin-bottom: var(--spacing-lg);
+}
+
+.contact__details {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-md);
+}
+
+.contact__detail {
+    display: flex;
+    align-items: flex-start;
+    gap: var(--spacing-md);
+}
+
+.contact__icon {
+    font-size: 1.5rem;
+    color: var(--color-primary);
+}
+
+.contact__detail-title {
+    margin-bottom: var(--spacing-xs);
+    font-size: var(--font-size-md);
+}
+
+.contact__detail-text {
+    color: var(--text-medium);
+    margin: 0;
+}
+
+.contact__form-container {
+    flex: 1;
+    min-width: 300px;
+    background-color: var(--text-white);
+    padding: var(--spacing-xl);
+    border-radius: var(--border-radius-md);
+    box-shadow: var(--shadow-md);
+}
+
+.contact__form-title {
+    margin-bottom: var(--spacing-lg);
+}
+
+.form__group {
+    margin-bottom: var(--spacing-md);
+}
+
+.form__label {
+    display: block;
+    margin-bottom: var(--spacing-xs);
+    font-weight: 600;
+}
+
+.form__input,
+.form__textarea {
+    width: 100%;
+    padding: var(--spacing-sm);
+    border: 1px solid var(--color-light-dark);
+    border-radius: var(--border-radius-sm);
+    transition: border-color var(--transition-fast);
+}
+
+.form__input:focus,
+.form__textarea:focus {
+    outline: none;
+    border-color: var(--color-primary);
+}
+
+.form__button {
+    display: inline-block;
+    padding: var(--spacing-sm) var(--spacing-lg);
+    background-color: var(--color-primary);
+    color: var(--text-white);
+    border: none;
+    border-radius: var(--border-radius-sm);
+    cursor: pointer;
+    font-weight: 600;
+    transition: background-color var(--transition-fast);
+}
+
+.form__button:hover {
+    background-color: var(--color-primary-dark);
+}
+
+/* Map Section */
+.map {
+    padding: var(--spacing-xxl) 0;
+    background-color: var(--color-light);
+}
+
+.map__container {
+    max-width: var(--container-max-width);
+    margin: 0 auto;
+    padding: 0 var(--container-padding);
+    text-align: center;
+}
+
+.map__title {
+    margin-bottom: var(--spacing-lg);
+}
+
+.map__image-placeholder {
+    background-color: var(--text-white);
+    height: 100%;
+    width: 100%;
+    border-radius: var(--border-radius-md);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--text-medium);
+    font-weight: bold;
+    box-shadow: var(--shadow-md);
+}
+
+/* FAQ Section */
+.faq {
+    padding: var(--spacing-xxl) 0;
+}
+
+.faq__container {
+    max-width: var(--container-max-width);
+    margin: 0 auto;
+    padding: 0 var(--container-padding);
+}
+
+.faq__title {
+    text-align: center;
+    margin-bottom: var(--spacing-xl);
+}
+
+.faq__list {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-md);
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.faq__item {
+    background-color: var(--text-white);
+    border-radius: var(--border-radius-md);
+    padding: var(--spacing-lg);
+    box-shadow: var(--shadow-md);
+}
+
+.faq__question {
+    margin-bottom: var(--spacing-sm);
+    color: var(--color-primary);
+    font-size: var(--font-size-lg);
+}
+
+.faq__answer {
+    color: var(--text-medium);
+    margin: 0;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .contact__container {
+        flex-direction: column;
+    }
+    
+    .contact__form-container {
+        order: -1;
+        margin-bottom: var(--spacing-lg);
+    }
+    
+    .map__image-placeholder {
+        height: 300px;
+    }
+}
+
+@media (max-width: 480px) {
+    .contact__detail {
+        flex-direction: column;
+        gap: var(--spacing-xs);
+    }
+    
+    .map__image-placeholder {
+        height: 200px;
+    }
+}

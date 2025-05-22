@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Componente Breadcrumbs</title>
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <link rel="stylesheet" href="../assets/css/components/breadcrumbs/breadcrumbs.css">
+    <style>
+        .component-container {
+            margin: 2rem 0;
+            padding: 2rem;
+            border: 1px solid var(--color-light-dark);
+            border-radius: var(--border-radius-md);
+        }
+        
+        .component-title {
+            margin-bottom: 1rem;
+            color: var(--color-primary);
+        }
+        
+        .component-description {
+            margin-bottom: 2rem;
+            color: var(--text-medium);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Componente Breadcrumbs</h1>
+        <p>Este componente muestra la ruta de navegación actual, siguiendo la metodología BEM.</p>
+        
+        <!-- Variante 1: Breadcrumbs Estándar -->
+        <div class="component-container">
+            <h2 class="component-title">Variante 1: Breadcrumbs Estándar</h2>
+            <p class="component-description">Migas de pan con estilo básico y separador de barra diagonal.</p>
+            
+            <nav class="breadcrumbs">
+                <ol class="breadcrumbs__list">
+                    <li class="breadcrumbs__item"><a href="#" class="breadcrumbs__link">Inicio</a></li>
+                    <li class="breadcrumbs__item"><a href="#" class="breadcrumbs__link">Categoría</a></li>
+                    <li class="breadcrumbs__item"><a href="#" class="breadcrumbs__link">Subcategoría</a></li>
+                    <li class="breadcrumbs__item breadcrumbs__item--active">Página Actual</li>
+                </ol>
+            </nav>
+        </div>
+        
+        <!-- Variante 2: Breadcrumbs con Fondo -->
+        <div class="component-container">
+            <h2 class="component-title">Variante 2: Breadcrumbs con Fondo</h2>
+            <p class="component-description">Migas de pan con fondo de color para destacar en la página.</p>
+            
+            <nav class="breadcrumbs breadcrumbs--background">
+                <ol class="breadcrumbs__list">
+                    <li class="breadcrumbs__item"><a href="#" class="breadcrumbs__link">Inicio</a></li>
+                    <li class="breadcrumbs__item"><a href="#" class="breadcrumbs__link">Categoría</a></li>
+                    <li class="breadcrumbs__item"><a href="#" class="breadcrumbs__link">Subcategoría</a></li>
+                    <li class="breadcrumbs__item breadcrumbs__item--active">Página Actual</li>
+                </ol>
+            </nav>
+        </div>
+        
+        <!-- Variante 3: Breadcrumbs con Iconos -->
+        <div class="component-container">
+            <h2 class="component-title">Variante 3: Breadcrumbs con Iconos</h2>
+            <p class="component-description">Migas de pan que incluyen iconos para mejorar la experiencia visual.</p>
+            
+            <nav class="breadcrumbs breadcrumbs--icons">
+                <ol class="breadcrumbs__list">
+                    <li class="breadcrumbs__item"><a href="#" class="breadcrumbs__link">🏠 Inicio</a></li>
+                    <li class="breadcrumbs__item"><a href="#" class="breadcrumbs__link">📁 Categoría</a></li>
+                    <li class="breadcrumbs__item"><a href="#" class="breadcrumbs__link">📂 Subcategoría</a></li>
+                    <li class="breadcrumbs__item breadcrumbs__item--active">📄 Página Actual</li>
+                </ol>
+            </nav>
+        </div>
+        
+        <!-- Variante 4: Breadcrumbs con Separador Personalizado -->
+        <div class="component-container">
+            <h2 class="component-title">Variante 4: Breadcrumbs con Separador Personalizado</h2>
+            <p class="component-description">Migas de pan con un separador personalizado (flecha) entre los elementos.</p>
+            
+            <nav class="breadcrumbs breadcrumbs--arrow">
+                <ol class="breadcrumbs__list">
+                    <li class="breadcrumbs__item"><a href="#" class="breadcrumbs__link">Inicio</a></li>
+                    <li class="breadcrumbs__item"><a href="#" class="breadcrumbs__link">Categoría</a></li>
+                    <li class="breadcrumbs__item"><a href="#" class="breadcrumbs__link">Subcategoría</a></li>
+                    <li class="breadcrumbs__item breadcrumbs__item--active">Página Actual</li>
+                </ol>
+            </nav>
+        </div>
+        
+        <!-- Variante 5: Breadcrumbs Minimalista -->
+        <div class="component-container">
+            <h2 class="component-title">Variante 5: Breadcrumbs Minimalista</h2>
+            <p class="component-description">Migas de pan con estilo minimalista y separadores sutiles.</p>
+            
+            <nav class="breadcrumbs breadcrumbs--minimal">
+                <ol class="breadcrumbs__list">
+                    <li class="breadcrumbs__item"><a href="#" class="breadcrumbs__link">Inicio</a></li>
+                    <li class="breadcrumbs__item"><a href="#" class="breadcrumbs__link">Categoría</a></li>
+                    <li class="breadcrumbs__item"><a href="#" class="breadcrumbs__link">Subcategoría</a></li>
+                    <li class="breadcrumbs__item breadcrumbs__item--active">Página Actual</li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Componente Tabs</title>
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <link rel="stylesheet" href="../assets/css/components/tabs/tabs.css">
+    <style>
+        .component-container {
+            margin: 2rem 0;
+            padding: 2rem;
+            border: 1px solid var(--color-light-dark);
+            border-radius: var(--border-radius-md);
+        }
+        
+        .component-title {
+            margin-bottom: 1rem;
+            color: var(--color-primary);
+        }
+        
+        .component-description {
+            margin-bottom: 2rem;
+            color: var(--text-medium);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Componente Tabs</h1>
+        <p>Este componente permite organizar contenido en pestañas, siguiendo la metodología BEM.</p>
+        
+        <!-- Variante 1: Tabs Estándar -->
+        <div class="component-container">
+            <h2 class="component-title">Variante 1: Tabs Estándar</h2>
+            <p class="component-description">Tabs con estilo básico y línea inferior para indicar la pestaña activa.</p>
+            
+            <div class="tabs">
+                <div class="tabs__nav">
+                    <button class="tabs__button tabs__button--active">Pestaña 1</button>
+                    <button class="tabs__button">Pestaña 2</button>
+                    <button class="tabs__button">Pestaña 3</button>
+                </div>
+                <div class="tabs__content tabs__content--active">
+                    <h3>Contenido de la Pestaña 1</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in dui mauris. Vivamus hendrerit arcu sed erat molestie vehicula.</p>
+                </div>
+                <div class="tabs__content">
+                    <h3>Contenido de la Pestaña 2</h3>
+                    <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
+                <div class="tabs__content">
+                    <h3>Contenido de la Pestaña 3</h3>
+                    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Variante 2: Tabs con Fondo -->
+        <div class="component-container">
+            <h2 class="component-title">Variante 2: Tabs con Fondo</h2>
+            <p class="component-description">Tabs con fondo de color para indicar la pestaña activa.</p>
+            
+            <div class="tabs tabs--background">
+                <div class="tabs__nav">
+                    <button class="tabs__button tabs__button--active">Pestaña 1</button>
+                    <button class="tabs__button">Pestaña 2</button>
+                    <button class="tabs__button">Pestaña 3</button>
+                </div>
+                <div class="tabs__content tabs__content--active">
+                    <h3>Contenido de la Pestaña 1</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in dui mauris. Vivamus hendrerit arcu sed erat molestie vehicula.</p>
+                </div>
+                <div class="tabs__content">
+                    <h3>Contenido de la Pestaña 2</h3>
+                    <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
+                <div class="tabs__content">
+                    <h3>Contenido de la Pestaña 3</h3>
+                    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Variante 3: Tabs Verticales -->
+        <div class="component-container">
+            <h2 class="component-title">Variante 3: Tabs Verticales</h2>
+            <p class="component-description">Tabs organizadas verticalmente, con los botones a la izquierda y el contenido a la derecha.</p>
+            
+            <div class="tabs tabs--vertical">
+                <div class="tabs__nav">
+                    <button class="tabs__button tabs__button--active">Pestaña 1</button>
+                    <button class="tabs__button">Pestaña 2</button>
+                    <button class="tabs__button">Pestaña 3</button>
+                </div>
+                <div class="tabs__content tabs__content--active">
+                    <h3>Contenido de la Pestaña 1</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in dui mauris. Vivamus hendrerit arcu sed erat molestie vehicula.</p>
+                </div>
+                <div class="tabs__content">
+                    <h3>Contenido de la Pestaña 2</h3>
+                    <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
+                <div class="tabs__content">
+                    <h3>Contenido de la Pestaña 3</h3>
+                    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Variante 4: Tabs con Iconos -->
+        <div class="component-container">
+            <h2 class="component-title">Variante 4: Tabs con Iconos</h2>
+            <p class="component-description">Tabs que incluyen iconos junto al texto para mejorar la experiencia visual.</p>
+            
+            <div class="tabs tabs--icons">
+                <div class="tabs__nav">
+                    <button class="tabs__button tabs__button--active">📝 Pestaña 1</button>
+                    <button class="tabs__button">📊 Pestaña 2</button>
+                    <button class="tabs__button">📱 Pestaña 3</button>
+                </div>
+                <div class="tabs__content tabs__content--active">
+                    <h3>Contenido de la Pestaña 1</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in dui mauris. Vivamus hendrerit arcu sed erat molestie vehicula.</p>
+                </div>
+                <div class="tabs__content">
+                    <h3>Contenido de la Pestaña 2</h3>
+                    <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
+                <div class="tabs__content">
+                    <h3>Contenido de la Pestaña 3</h3>
+                    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Variante 5: Tabs Redondeadas -->
+        <div class="component-container">
+            <h2 class="component-title">Variante 5: Tabs Redondeadas</h2>
+            <p class="component-description">Tabs con bordes redondeados para un estilo más suave.</p>
+            
+            <div class="tabs tabs--rounded">
+                <div class="tabs__nav">
+                    <button class="tabs__button tabs__button--active">Pestaña 1</button>
+                    <button class="tabs__button">Pestaña 2</button>
+                    <button class="tabs__button">Pestaña 3</button>
+                </div>
+                <div class="tabs__content tabs__content--active">
+                    <h3>Contenido de la Pestaña 1</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in dui mauris. Vivamus hendrerit arcu sed erat molestie vehicula.</p>
+                </div>
+                <div class="tabs__content">
+                    <h3>Contenido de la Pestaña 2</h3>
+                    <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
+                <div class="tabs__content">
+                    <h3>Contenido de la Pestaña 3</h3>
+                    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

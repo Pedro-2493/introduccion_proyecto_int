@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Componente Botones</title>
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <link rel="stylesheet" href="../assets/css/components/buttons/buttons.css">
+    <style>
+        .component-container {
+            margin: 2rem 0;
+            padding: 2rem;
+            border: 1px solid var(--color-light-dark);
+            border-radius: var(--border-radius-md);
+        }
+        
+        .component-title {
+            margin-bottom: 1rem;
+            color: var(--color-primary);
+        }
+        
+        .component-description {
+            margin-bottom: 2rem;
+            color: var(--text-medium);
+        }
+
+        /* Estilos básicos para los botones (solo para visualización) */
+        .button {
+            display: inline-block;
+            padding: var(--spacing-sm) var(--spacing-lg);
+            border-radius: var(--border-radius-sm);
+            font-weight: bold;
+            text-align: center;
+            cursor: pointer;
+            transition: all var(--transition-fast);
+            border: none;
+            margin-right: var(--spacing-md);
+            margin-bottom: var(--spacing-md);
+            font-family: var(--font-family-base);
+            font-size: var(--font-size-md);
+        }
+
+        /* Variante 1: Colores */
+        .button--primary {
+            background-color: var(--color-primary);
+            color: var(--text-white);
+        }
+
+        .button--primary:hover {
+            background-color: var(--color-primary-dark);
+        }
+
+        .button--secondary {
+            background-color: var(--color-secondary);
+            color: var(--text-white);
+        }
+
+        .button--secondary:hover {
+            background-color: var(--color-secondary-dark);
+        }
+
+        .button--accent {
+            background-color: var(--color-accent);
+            color: var(--text-white);
+        }
+
+        .button--accent:hover {
+            background-color: var(--color-accent-dark);
+        }
+
+        /* Variante 2: Tamaños */
+        .button--small {
+            padding: var(--spacing-xs) var(--spacing-md);
+            font-size: var(--font-size-sm);
+        }
+
+        .button--large {
+            padding: var(--spacing-md) var(--spacing-xl);
+            font-size: var(--font-size-lg);
+        }
+
+        /* Variante 3: Outline */
+        .button--outline-primary {
+            background-color: transparent;
+            border: 2px solid var(--color-primary);
+            color: var(--color-primary);
+        }
+
+        .button--outline-primary:hover {
+            background-color: var(--color-primary);
+            color: var(--text-white);
+        }
+
+        .button--outline-secondary {
+            background-color: transparent;
+            border: 2px solid var(--color-secondary);
+            color: var(--color-secondary);
+        }
+
+        .button--outline-secondary:hover {
+            background-color: var(--color-secondary);
+            color: var(--text-white);
+        }
+
+        /* Variante 4: Redondeados */
+        .button--rounded {
+            border-radius: 50px;
+        }
+
+        /* Variante 5: Con Iconos */
+        .button--icon {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .button__icon {
+            margin-right: var(--spacing-sm);
+            font-weight: bold;
+        }
+
+        /* Variante 6: Disabled */
+        .button--disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+        }
+
+        .button--disabled:hover {
+            background-color: var(--color-primary);
+        }
+    </style>
+</head>
+<body>
+    <div class="component-container">
+        <h2 class="component-title">Botones - Variante 1: Colores</h2>
+        <p class="component-description">Botones en diferentes colores para diferentes acciones.</p>
+        
+        <!-- Botones Colores -->
+        <button class="button button--primary">Botón Primario</button>
+        <button class="button button--secondary">Botón Secundario</button>
+        <button class="button button--accent">Botón Acento</button>
+    </div>
+    
+    <div class="component-container">
+        <h2 class="component-title">Botones - Variante 2: Tamaños</h2>
+        <p class="component-description">Botones en diferentes tamaños para adaptarse a diferentes contextos.</p>
+        
+        <!-- Botones Tamaños -->
+        <button class="button button--primary button--small">Botón Pequeño</button>
+        <button class="button button--primary">Botón Normal</button>
+        <button class="button button--primary button--large">Botón Grande</button>
+    </div>
+    
+    <div class="component-container">
+        <h2 class="component-title">Botones - Variante 3: Outline</h2>
+        <p class="component-description">Botones con borde y fondo transparente, ideal para acciones secundarias.</p>
+        
+        <!-- Botones Outline -->
+        <button class="button button--outline-primary">Botón Outline Primario</button>
+        <button class="button button--outline-secondary">Botón Outline Secundario</button>
+    </div>
+    
+    <div class="component-container">
+        <h2 class="component-title">Botones - Variante 4: Redondeados</h2>
+        <p class="component-description">Botones con bordes completamente redondeados para un aspecto más suave.</p>
+        
+        <!-- Botones Redondeados -->
+        <button class="button button--primary button--rounded">Botón Redondeado</button>
+        <button class="button button--secondary button--rounded">Botón Redondeado</button>
+        <button class="button button--outline-primary button--rounded">Botón Outline Redondeado</button>
+    </div>
+    
+    <div class="component-container">
+        <h2 class="component-title">Botones - Variante 5: Con Iconos</h2>
+        <p class="component-description">Botones con iconos para reforzar visualmente la acción.</p>
+        
+        <!-- Botones Con Iconos -->
+        <button class="button button--primary button--icon">
+            <span class="button__icon">→</span>
+            Siguiente
+        </button>
+        <button class="button button--secondary button--icon">
+            <span class="button__icon">+</span>
+            Añadir
+        </button>
+        <button class="button button--accent button--icon">
+            <span class="button__icon">✓</span>
+            Confirmar
+        </button>
+    </div>
+    
+    <div class="component-container">
+        <h2 class="component-title">Botones - Variante 6: Deshabilitados</h2>
+        <p class="component-description">Botones en estado deshabilitado para acciones no disponibles.</p>
+        
+        <!-- Botones Deshabilitados -->
+        <button class="button button--primary button--disabled">Botón Deshabilitado</button>
+        <button class="button button--secondary button--disabled">Botón Deshabilitado</button>
+        <button class="button button--outline-primary button--disabled">Botón Outline Deshabilitado</button>
+    </div>
+</body>
+</html>

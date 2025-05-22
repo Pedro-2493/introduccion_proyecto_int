@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Componente Tooltips</title>
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <link rel="stylesheet" href="../assets/css/components/tooltips/tooltips.css">
+    <style>
+        .component-container {
+            margin: 2rem 0;
+            padding: 2rem;
+            border: 1px solid var(--color-light-dark);
+            border-radius: var(--border-radius-md);
+        }
+        
+        .component-title {
+            margin-bottom: 1rem;
+            color: var(--color-primary);
+        }
+        
+        .component-description {
+            margin-bottom: 2rem;
+            color: var(--text-medium);
+        }
+
+        .tooltip-example {
+            display: flex;
+            flex-wrap: wrap;
+            gap: var(--spacing-lg);
+            justify-content: center;
+            margin: var(--spacing-lg) 0;
+        }
+
+        .tooltip-container {
+            display: inline-block;
+            position: relative;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Componente Tooltips</h1>
+        <p>Este componente muestra información adicional al pasar el cursor sobre un elemento, siguiendo la metodología BEM.</p>
+        
+        <!-- Variante 1: Tooltip Estándar -->
+        <div class="component-container">
+            <h2 class="component-title">Variante 1: Tooltip Estándar</h2>
+            <p class="component-description">Tooltip básico que aparece al pasar el cursor sobre un elemento.</p>
+            
+            <div class="tooltip-example">
+                <div class="tooltip-container">
+                    <button class="button button--primary">Pasa el cursor aquí</button>
+                    <span class="tooltip">Este es un tooltip estándar</span>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Variante 2: Tooltip con Posiciones -->
+        <div class="component-container">
+            <h2 class="component-title">Variante 2: Tooltip con Posiciones</h2>
+            <p class="component-description">Tooltips que aparecen en diferentes posiciones: arriba, derecha, abajo e izquierda.</p>
+            
+            <div class="tooltip-example">
+                <div class="tooltip-container">
+                    <button class="button button--primary">Arriba</button>
+                    <span class="tooltip tooltip--top">Tooltip arriba</span>
+                </div>
+                
+                <div class="tooltip-container">
+                    <button class="button button--primary">Derecha</button>
+                    <span class="tooltip tooltip--right">Tooltip derecha</span>
+                </div>
+                
+                <div class="tooltip-container">
+                    <button class="button button--primary">Abajo</button>
+                    <span class="tooltip tooltip--bottom">Tooltip abajo</span>
+                </div>
+                
+                <div class="tooltip-container">
+                    <button class="button button--primary">Izquierda</button>
+                    <span class="tooltip tooltip--left">Tooltip izquierda</span>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Variante 3: Tooltip con Colores -->
+        <div class="component-container">
+            <h2 class="component-title">Variante 3: Tooltip con Colores</h2>
+            <p class="component-description">Tooltips con diferentes colores de fondo para diferentes tipos de información.</p>
+            
+            <div class="tooltip-example">
+                <div class="tooltip-container">
+                    <button class="button button--primary">Primario</button>
+                    <span class="tooltip tooltip--primary">Tooltip primario</span>
+                </div>
+                
+                <div class="tooltip-container">
+                    <button class="button button--secondary">Secundario</button>
+                    <span class="tooltip tooltip--secondary">Tooltip secundario</span>
+                </div>
+                
+                <div class="tooltip-container">
+                    <button class="button button--accent">Acento</button>
+                    <span class="tooltip tooltip--accent">Tooltip acento</span>
+                </div>
+                
+                <div class="tooltip-container">
+                    <button class="button">Oscuro</button>
+                    <span class="tooltip tooltip--dark">Tooltip oscuro</span>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Variante 4: Tooltip con Flechas -->
+        <div class="component-container">
+            <h2 class="component-title">Variante 4: Tooltip con Flechas</h2>
+            <p class="component-description">Tooltips con flechas que apuntan al elemento que los activa.</p>
+            
+            <div class="tooltip-example">
+                <div class="tooltip-container">
+                    <button class="button button--primary">Con flecha</button>
+                    <span class="tooltip tooltip--arrow">Tooltip con flecha</span>
+                </div>
+                
+                <div class="tooltip-container">
+                    <button class="button button--primary">Flecha arriba</button>
+                    <span class="tooltip tooltip--bottom tooltip--arrow">Tooltip con flecha arriba</span>
+                </div>
+                
+                <div class="tooltip-container">
+                    <button class="button button--primary">Flecha derecha</button>
+                    <span class="tooltip tooltip--left tooltip--arrow">Tooltip con flecha derecha</span>
+                </div>
+                
+                <div class="tooltip-container">
+                    <button class="button button--primary">Flecha abajo</button>
+                    <span class="tooltip tooltip--top tooltip--arrow">Tooltip con flecha abajo</span>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Variante 5: Tooltip con Animación -->
+        <div class="component-container">
+            <h2 class="component-title">Variante 5: Tooltip con Animación</h2>
+            <p class="component-description">Tooltips con diferentes efectos de animación al aparecer y desaparecer.</p>
+            
+            <div class="tooltip-example">
+                <div class="tooltip-container">
+                    <button class="button button--primary">Fade</button>
+                    <span class="tooltip tooltip--fade">Tooltip con fade</span>
+                </div>
+                
+                <div class="tooltip-container">
+                    <button class="button button--primary">Scale</button>
+                    <span class="tooltip tooltip--scale">Tooltip con scale</span>
+                </div>
+                
+                <div class="tooltip-container">
+                    <button class="button button--primary">Slide</button>
+                    <span class="tooltip tooltip--slide">Tooltip con slide</span>
+                </div>
+                
+                <div class="tooltip-container">
+                    <button class="button button--primary">Bounce</button>
+                    <span class="tooltip tooltip--bounce">Tooltip con bounce</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Componente Pagination</title>
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <link rel="stylesheet" href="../assets/css/components/pagination/pagination.css">
+    <style>
+        .component-container {
+            margin: 2rem 0;
+            padding: 2rem;
+            border: 1px solid var(--color-light-dark);
+            border-radius: var(--border-radius-md);
+        }
+        
+        .component-title {
+            margin-bottom: 1rem;
+            color: var(--color-primary);
+        }
+        
+        .component-description {
+            margin-bottom: 2rem;
+            color: var(--text-medium);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Componente Pagination</h1>
+        <p>Este componente permite navegar entre páginas de resultados, siguiendo la metodología BEM.</p>
+        
+        <!-- Variante 1: Pagination Estándar -->
+        <div class="component-container">
+            <h2 class="component-title">Variante 1: Pagination Estándar</h2>
+            <p class="component-description">Paginación con estilo básico y números de página.</p>
+            
+            <nav class="pagination">
+                <ul class="pagination__list">
+                    <li class="pagination__item">
+                        <a href="#" class="pagination__link pagination__link--prev" aria-label="Página anterior">Anterior</a>
+                    </li>
+                    <li class="pagination__item">
+                        <a href="#" class="pagination__link">1</a>
+                    </li>
+                    <li class="pagination__item">
+                        <a href="#" class="pagination__link pagination__link--active">2</a>
+                    </li>
+                    <li class="pagination__item">
+                        <a href="#" class="pagination__link">3</a>
+                    </li>
+                    <li class="pagination__item">
+                        <a href="#" class="pagination__link">4</a>
+                    </li>
+                    <li class="pagination__item">
+                        <a href="#" class="pagination__link">5</a>
+                    </li>
+                    <li class="pagination__item">
+                        <a href="#" class="pagination__link pagination__link--next" aria-label="Página siguiente">Siguiente</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        
+        <!-- Variante 2: Pagination con Bordes Redondeados -->
+        <div class="component-container">
+            <h2 class="component-title">Variante 2: Pagination con Bordes Redondeados</h2>
+            <p class="component-description">Paginación con bordes redondeados para un estilo más suave.</p>
+            
+            <nav class="pagination pagination--rounded">
+                <ul class="pagination__list">
+                    <li class="pagination__item">
+                        <a href="#" class="pagination__link pagination__link--prev" aria-label="Página anterior">Anterior</a>
+                    </li>
+                    <li class="pagination__item">
+                        <a href="#" class="pagination__link">1</a>
+                    </li>
+                    <li class="pagination__item">
+                        <a href="#" class="pagination__link pagination__link--active">2</a>
+                    </li>
+                    <li class="pagination__item">
+                        <a href="#" class="pagination__link">3</a>
+                    </li>
+                    <li class="pagination__item">
+                        <a href="#" class="pagination__link">4</a>
+                    </li>
+                    <li class="pagination__item">
+                        <a href="#" class="pagination__link">5</a>
+                    </li>
+                    <li class="pagination__item">
+                        <a href="#" class="pagination__link pagination__link--next" aria-label="Página siguiente">Siguiente</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        
+        <!-- Variante 3: Pagination con Iconos -->
+        <div class="component-container">
+            <h2 class="component-title">Variante 3: Pagination con Iconos</h2>
+            <p class="component-description">Paginación que utiliza iconos para los botones de anterior y siguiente.</p>
+            
+            <nav class="pagination pagination--icons">
+                <ul class="pagination__list">
+                    <li class="pagination__item">
+                        <a href="#" class="pagination__link pagination__link--prev" aria-label="Página anterior">← Anterior</a>
+                    </li>
+                    <li class="pagination__item">
+                        <a href="#" class="pagination__link">1</a>
+                    </li>
+                    <li class="pagination__item">
+                        <a href="#" class="pagination__link pagination__link--active">2</a>
+                    </li>
+                    <li class="pagination__item">
+                        <a href="#" class="pagination__link">3</a>
+                    </li>
+                    <li class="pagination__item">
+                        <a href="#" class="pagination__link">4</a>
+                    </li>
+                    <li class="pagination__item">
+                        <a href="#" class="pagination__link">5</a>
+                    </li>
+                    <li class="pagination__item">
+                        <a href="#" class="pagination__link pagination__link--next" aria-label="Página siguiente">Siguiente →</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        
+        <!-- Variante 4: Pagination Compacta -->
+        <div class="component-container">
+            <h2 class="component-title">Variante 4: Pagination Compacta</h2>
+            <p class="component-description">Paginación con diseño compacto para ahorrar espacio.</p>
+            
+            <nav class="pagination pagination--compact">
+                <ul class="pagination__list">
+                    <li class="pagination__item">
+                        <a href="#" class="pagination__link pagination__link--prev" aria-label="Página anterior">←</a>
+                    </li>
+                    <li class="pagination__item">
+                        <a href="#" class="pagination__link">1</a>
+                    </li>
+                    <li class="pagination__item">
+                        <a href="#" class="pagination__link pagination__link--active">2</a>
+                    </li>
+                    <li class="pagination__item">
+                        <a href="#" class="pagination__link">3</a>
+                    </li>
+                    <li class="pagination__item pagination__item--ellipsis">...</li>
+                    <li class="pagination__item">
+                        <a href="#" class="pagination__link">10</a>
+                    </li>
+                    <li class="pagination__item">
+                        <a href="#" class="pagination__link pagination__link--next" aria-label="Página siguiente">→</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        
+        <!-- Variante 5: Pagination con Fondo -->
+        <div class="component-container">
+            <h2 class="component-title">Variante 5: Pagination con Fondo</h2>
+            <p class="component-description">Paginación con fondo de color para destacar en la página.</p>
+            
+            <nav class="pagination pagination--background">
+                <ul class="pagination__list">
+                    <li class="pagination__item">
+                        <a href="#" class="pagination__link pagination__link--prev" aria-label="Página anterior">Anterior</a>
+                    </li>
+                    <li class="pagination__item">
+                        <a href="#" class="pagination__link">1</a>
+                    </li>
+                    <li class="pagination__item">
+                        <a href="#" class="pagination__link pagination__link--active">2</a>
+                    </li>
+                    <li class="pagination__item">
+                        <a href="#" class="pagination__link">3</a>
+                    </li>
+                    <li class="pagination__item">
+                        <a href="#" class="pagination__link">4</a>
+                    </li>
+                    <li class="pagination__item">
+                        <a href="#" class="pagination__link">5</a>
+                    </li>
+                    <li class="pagination__item">
+                        <a href="#" class="pagination__link pagination__link--next" aria-label="Página siguiente">Siguiente</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Componente Testimonios</title>
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <link rel="stylesheet" href="../assets/css/components/testimonials/testimonials.css">
+    <style>
+        .component-container {
+            margin: 2rem 0;
+            padding: 2rem;
+            border: 1px solid var(--color-light-dark);
+            border-radius: var(--border-radius-md);
+        }
+        
+        .component-title {
+            margin-bottom: 1rem;
+            color: var(--color-primary);
+        }
+        
+        .component-description {
+            margin-bottom: 2rem;
+            color: var(--text-medium);
+        }
+
+        /* Estilos para simular avatares */
+        .avatar-placeholder {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background-color: var(--color-light-dark);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--text-white);
+            font-weight: bold;
+            margin-right: var(--spacing-md);
+        }
+
+        /* Estilos básicos para los testimonios (solo para visualización) */
+        .testimonials {
+            width: 100%;
+        }
+
+        .testimonials__container {
+            display: grid;
+            gap: var(--spacing-lg);
+        }
+
+        .testimonial {
+            background-color: var(--text-white);
+            border-radius: var(--border-radius-md);
+            padding: var(--spacing-lg);
+            box-shadow: var(--shadow-sm);
+        }
+
+        .testimonial__content {
+            margin-bottom: var(--spacing-md);
+        }
+
+        .testimonial__quote {
+            font-size: var(--font-size-md);
+            line-height: 1.6;
+            color: var(--text-medium);
+            margin-bottom: var(--spacing-md);
+            font-style: italic;
+        }
+
+        .testimonial__author {
+            display: flex;
+            align-items: center;
+        }
+
+        .testimonial__name {
+            font-weight: bold;
+            color: var(--text-dark);
+            margin-bottom: var(--spacing-xs);
+        }
+
+        .testimonial__position {
+            font-size: var(--font-size-sm);
+            color: var(--text-medium);
+        }
+
+        .testimonial__rating {
+            color: gold;
+            margin-bottom: var(--spacing-sm);
+        }
+
+        /* Variante 1: Grid */
+        .testimonials--grid .testimonials__container {
+            grid-template-columns: repeat(3, 1fr);
+        }
+
+        /* Variante 2: Cards */
+        .testimonials--cards .testimonial {
+            border: 1px solid var(--color-light-dark);
+            transition: transform var(--transition-normal);
+        }
+
+        .testimonials--cards .testimonial:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-md);
+        }
+
+        /* Variante 3: Minimal */
+        .testimonials--minimal .testimonial {
+            box-shadow: none;
+            border: none;
+            padding: var(--spacing-md) 0;
+            border-bottom: 1px solid var(--color-light-dark);
+            border-radius: 0;
+        }
+
+        .testimonials--minimal .testimonial:last-child {
+            border-bottom: none;
+        }
+
+        /* Variante 4: Quote */
+        .testimonials--quote .testimonial {
+            position: relative;
+        }
+
+        .testimonials--quote .testimonial__quote::before {
+            content: '"';
+            font-size: 4rem;
+            color: var(--color-light-dark);
+            position: absolute;
+            top: 0;
+            left: var(--spacing-md);
+            line-height: 1;
+            opacity: 0.3;
+        }
+
+        .testimonials--quote .testimonial__content {
+            padding-top: var(--spacing-lg);
+        }
+
+        /* Variante 5: Carousel */
+        .testimonials--carousel .testimonials__container {
+            display: flex;
+            overflow-x: auto;
+            scroll-snap-type: x mandatory;
+            gap: var(--spacing-lg);
+            padding-bottom: var(--spacing-md);
+        }
+
+        .testimonials--carousel .testimonial {
+            flex: 0 0 350px;
+            scroll-snap-align: start;
+        }
+
+        /* Variante 6: Colored */
+        .testimonials--colored .testimonial {
+            background-color: var(--color-primary);
+            color: var(--text-white);
+        }
+
+        .testimonials--colored .testimonial__quote,
+        .testimonials--colored .testimonial__name,
+        .testimonials--colored .testimonial__position {
+            color: var(--text-white);
+        }
+
+        /* Responsive */
+        @media (max-width: 992px) {
+            .testimonials--grid .testimonials__container {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .testimonials--grid .testimonials__container {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="component-container">
+        <h2 class="component-title">Testimonios - Variante 1: Grid</h2>
+        <p class="component-description">Testimonios organizados en una cuadrícula.</p>
+        
+        <!-- Testimonios Grid -->
+        <div class="testimonials testimonials--grid">
+            <div class="testimonials__container">
+                <div class="testimonial">
+                    <div class="testimonial__content">
+                        <div class="testimonial__rating">★★★★★</div>
+                        <p class="testimonial__quote">"Excelente servicio, superó todas mis expectativas. El equipo fue muy profesional y entregó el proyecto antes de lo previsto."</p>
+                    </div>
+                    <div class="testimonial__author">
+                        <div class="avatar-placeholder">JD</div>
+                        <div>
+                            <p class="testimonial__name">Juan Díaz</p>
+                            <p class="testimonial__position">Director de Marketing, Empresa ABC</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial">
+                    <div class="testimonial__content">
+                        <div class="testimonial__rating">★★★★★</div>
+                        <p class="testimonial__quote">"Trabajar con este equipo ha sido una experiencia increíble. Su atención al detalle y creatividad son incomparables."</p>
+                    </div>
+                    <div class="testimonial__author">
+                        <div class="avatar-placeholder">ML</div>
+                        <div>
+                            <p class="testimonial__name">María López</p>
+                            <p class="testimonial__position">CEO, Startup XYZ</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial">
+                    <div class="testimonial__content">
+                        <div class="testimonial__rating">★★★★☆</div>
+                        <p class="testimonial__quote">"Muy satisfecho con los resultados. El sitio web ha aumentado nuestras conversiones en un 30% desde su lanzamiento."</p>
+                    </div>
+                    <div class="testimonial__author">
+                        <div class="avatar-placeholder">CR</div>
+                        <div>
+                            <p class="testimonial__name">Carlos Rodríguez</p>
+                            <p class="testimonial__position">Gerente de Ventas, Empresa 123</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="component-container">
+        <h2 class="component-title">Testimonios - Variante 2: Cards</h2>
+        <p class="component-description">Testimonios en formato de tarjetas con efecto hover.</p>
+        
+        <!-- Testimonios Cards -->
+        <div class="testimonials testimonials--cards">
+            <div class="testimonials__container">
+                <div class="testimonial">
+                    <div class="testimonial__content">
+                        <div class="testimonial__rating">★★★★★</div>
+                        <p class="testimonial__quote">"Excelente servicio, superó todas mis expectativas. El equipo fue muy profesional y entregó el proyecto antes de lo previsto."</p>
+                    </div>
+                    <div class="testimonial__author">
+                        <div class="avatar-placeholder">JD</div>
+                        <div>
+                            <p class="testimonial__name">Juan Díaz</p>
+                            <p class="testimonial__position">Director de Marketing, Empresa ABC</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial">
+                    <div class="testimonial__content">
+                        <div class="testimonial__rating">★★★★★</div>
+                        <p class="testimonial__quote">"Trabajar con este equipo ha sido una experiencia increíble. Su atención al detalle y creatividad son incomparables."</p>
+                    </div>
+                    <div class="testimonial__author">
+                        <div class="avatar-placeholder">ML</div>
+                        <div>
+                            <p class="testimonial__name">María López</p>
+                            <p class="testimonial__position">CEO, Startup XYZ</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="component-container">
+        <h2 class="component-title">Testimonios - Variante 3: Minimalista</h2>
+        <p class="component-description">Testimonios con diseño minimalista, sin bordes ni sombras.</p>
+        
+        <!-- Testimonios Minimalistas -->
+        <div class="testimonials testimonials--minimal">
+            <div class="testimonials__container">
+                <div class="testimonial">
+                    <div class="testimonial__content">
+                        <div class="testimonial__rating">★★★★★</div>
+                        <p class="testimonial__quote">"Excelente servicio, superó todas mis expectativas. El equipo fue muy profesional y entregó el proyecto antes de lo previsto."</p>
+                    </div>
+                    <div class="testimonial__author">
+                        <div class="avatar-placeholder">JD</div>
+                        <div>
+                            <p class="testimonial__name">Juan Díaz</p>
+                            <p class="testimonial__position">Director de Marketing, Empresa ABC</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial">
+                    <div class="testimonial__content">
+                        <div class="testimonial__rating">★★★★★</div>
+                        <p class="testimonial__quote">"Trabajar con este equipo ha sido una experiencia increíble. Su atención al detalle y creatividad son incomparables."</p>
+                    </div>
+                    <div class="testimonial__author">
+                        <div class="avatar-placeholder">ML</div>
+                        <div>
+                            <p class="testimonial__name">María López</p>
+                            <p class="testimonial__position">CEO, Startup XYZ</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="component-container">
+        <h2 class="component-title">Testimonios - Variante 4: Con Comillas</h2>
+        <p class="component-description">Testimonios con comillas grandes para enfatizar las citas.</p>
+        
+        <!-- Testimonios Con Comillas -->
+        <div class="testimonials testimonials--quote">
+            <div class="testimonials__container">
+                <div class="testimonial">
+                    <div class="testimonial__content">
+                        <div class="testimonial__rating">★★★★★</div>
+                        <p class="testimonial__quote">"Excelente servicio, superó todas mis expectativas. El equipo fue muy profesional y entregó el proyecto antes de lo previsto."</p>
+                    </div>
+                    <div class="testimonial__author">
+                        <div class="avatar-placeholder">JD</div>
+                        <div>
+                            <p class="testimonial__name">Juan Díaz</p>
+                            <p class="testimonial__position">Director de Marketing, Empresa ABC</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial">
+                    <div class="testimonial__content">
+                        <div class="testimonial__rating">★★★★★</div>
+                        <p class="testimonial__quote">"Trabajar con este equipo ha sido una experiencia increíble. Su atención al detalle y creatividad son incomparables."</p>
+                    </div>
+                    <div class="testimonial__author">
+                        <div class="avatar-placeholder">ML</div>
+                        <div>
+                            <p class="testimonial__name">María López</p>
+                            <p class="testimonial__position">CEO, Startup XYZ</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="component-container">
+        <h2 class="component-title">Testimonios - Variante 5: Carrusel</h2>
+        <p class="component-description">Testimonios en formato de carrusel horizontal desplazable.</p>
+        
+        <!-- Testimonios Carrusel -->
+        <div class="testimonials testimonials--carousel">
+            <div class="testimonials__container">
+                <div class="testimonial">
+                    <div class="testimonial__content">
+                        <div class="testimonial__rating">★★★★★</div>
+                        <p class="testimonial__quote">"Excelente servicio, superó todas mis expectativas. El equipo fue muy profesional y entregó el proyecto antes de lo previsto."</p>
+                    </div>
+                    <div class="testimonial__author">
+                        <div class="avatar-placeholder">JD</div>
+                        <div>
+                            <p class="testimonial__name">Juan Díaz</p>
+                            <p class="testimonial__position">Director de Marketing, Empresa ABC</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial">
+                    <div class="testimonial__content">
+                        <div class="testimonial__rating">★★★★★</div>
+                        <p class="testimonial__quote">"Trabajar con este equipo ha sido una experiencia increíble. Su atención al detalle y creatividad son incomparables."</p>
+                    </div>
+                    <div class="testimonial__author">
+                        <div class="avatar-placeholder">ML</div>
+                        <div>
+                            <p class="testimonial__name">María López</p>
+                            <p class="testimonial__position">CEO, Startup XYZ</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial">
+                    <div class="testimonial__content">
+                        <div class="testimonial__rating">★★★★☆</div>
+                        <p class="testimonial__quote">"Muy satisfecho con los resultados. El sitio web ha aumentado nuestras conversiones en un 30% desde su lanzamiento."</p>
+                    </div>
+                    <div class="testimonial__author">
+                        <div class="avatar-placeholder">CR</div>
+                        <div>
+                            <p class="testimonial__name">Carlos Rodríguez</p>
+                            <p class="testimonial__position">Gerente de Ventas, Empresa 123</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="component-container">
+        <h2 class="component-title">Testimonios - Variante 6: Con Color</h2>
+        <p class="component-description">Testimonios con fondo de color para destacar.</p>
+        
+        <!-- Testimonios Con Color -->
+        <div class="testimonials testimonials--colored">
+            <div class="testimonials__container">
+                <div class="testimonial">
+                    <div class="testimonial__content">
+                        <div class="testimonial__rating">★★★★★</div>
+                        <p class="testimonial__quote">"Excelente servicio, superó todas mis expectativas. El equipo fue muy profesional y entregó el proyecto antes de lo previsto."</p>
+                    </div>
+                    <div class="testimonial__author">
+                        <div class="avatar-placeholder">JD</div>
+                        <div>
+                            <p class="testimonial__name">Juan Díaz</p>
+                            <p class="testimonial__position">Director de Marketing, Empresa ABC</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial">
+                    <div class="testimonial__content">
+                        <div class="testimonial__rating">★★★★★</div>
+                        <p class="testimonial__quote">"Trabajar con este equipo ha sido una experiencia increíble. Su atención al detalle y creatividad son incomparables."</p>
+                    </div>
+                    <div class="testimonial__author">
+                        <div class="avatar-placeholder">ML</div>
+                        <div>
+                            <p class="testimonial__name">María López</p>
+                            <p class="testimonial__position">CEO, Startup XYZ</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Componente Header</title>
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <link rel="stylesheet" href="../assets/css/components/header/header.css">
+    <style>
+        .component-container {
+            margin: 2rem 0;
+            padding: 2rem;
+            border: 1px solid var(--color-light-dark);
+            border-radius: var(--border-radius-md);
+        }
+        
+        .component-title {
+            margin-bottom: 1rem;
+            color: var(--color-primary);
+        }
+        
+        .component-description {
+            margin-bottom: 2rem;
+            color: var(--text-medium);
+        }
+        
+        /* Estilos para visualizar mejor el header transparente */
+        .transparent-bg {
+            background-color: var(--color-dark);
+            padding: 2rem 0 8rem 0;
+            margin-bottom: -6rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="component-container">
+        <h2 class="component-title">Header - Variante 1: Estándar</h2>
+        <p class="component-description">Header básico con logo a la izquierda y navegación a la derecha.</p>
+        
+        <!-- Header Estándar -->
+        <header class="header">
+            <div class="header__container">
+                <h1 class="header__logo">Mi Sitio</h1>
+                <nav class="header__nav">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="#" class="nav__link nav__link--active">Inicio</a></li>
+                        <li class="nav__item"><a href="#" class="nav__link">Acerca de</a></li>
+                        <li class="nav__item"><a href="#" class="nav__link">Servicios</a></li>
+                        <li class="nav__item"><a href="#" class="nav__link">Contacto</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+    </div>
+    
+    <div class="component-container">
+        <h2 class="component-title">Header - Variante 2: Fondo Oscuro</h2>
+        <p class="component-description">Header con fondo oscuro y texto claro.</p>
+        
+        <!-- Header Fondo Oscuro -->
+        <header class="header header--dark">
+            <div class="header__container">
+                <h1 class="header__logo">Mi Sitio</h1>
+                <nav class="header__nav">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="#" class="nav__link nav__link--active">Inicio</a></li>
+                        <li class="nav__item"><a href="#" class="nav__link">Acerca de</a></li>
+                        <li class="nav__item"><a href="#" class="nav__link">Servicios</a></li>
+                        <li class="nav__item"><a href="#" class="nav__link">Contacto</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+    </div>
+    
+    <div class="component-container">
+        <h2 class="component-title">Header - Variante 3: Centrado</h2>
+        <p class="component-description">Header con logo y navegación centrados.</p>
+        
+        <!-- Header Centrado -->
+        <header class="header header--centered">
+            <div class="header__container">
+                <h1 class="header__logo">Mi Sitio</h1>
+                <nav class="header__nav">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="#" class="nav__link nav__link--active">Inicio</a></li>
+                        <li class="nav__item"><a href="#" class="nav__link">Acerca de</a></li>
+                        <li class="nav__item"><a href="#" class="nav__link">Servicios</a></li>
+                        <li class="nav__item"><a href="#" class="nav__link">Contacto</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+    </div>
+    
+    <div class="component-container">
+        <h2 class="component-title">Header - Variante 4: Transparente</h2>
+        <p class="component-description">Header con fondo transparente, ideal para colocar sobre imágenes o fondos de color.</p>
+        
+        <!-- Header Transparente (con fondo oscuro para visualización) -->
+        <div class="transparent-bg">
+            <header class="header header--transparent">
+                <div class="header__container">
+                    <h1 class="header__logo">Mi Sitio</h1>
+                    <nav class="header__nav">
+                        <ul class="nav__list">
+                            <li class="nav__item"><a href="#" class="nav__link nav__link--active">Inicio</a></li>
+                            <li class="nav__item"><a href="#" class="nav__link">Acerca de</a></li>
+                            <li class="nav__item"><a href="#" class="nav__link">Servicios</a></li>
+                            <li class="nav__item"><a href="#" class="nav__link">Contacto</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </header>
+        </div>
+    </div>
+    
+    <div class="component-container">
+        <h2 class="component-title">Header - Variante 5: Compacto</h2>
+        <p class="component-description">Header con diseño compacto, ideal para interfaces con espacio limitado.</p>
+        
+        <!-- Header Compacto -->
+        <header class="header header--compact">
+            <div class="header__container">
+                <h1 class="header__logo">Mi Sitio</h1>
+                <nav class="header__nav">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="#" class="nav__link nav__link--active">Inicio</a></li>
+                        <li class="nav__item"><a href="#" class="nav__link">Acerca de</a></li>
+                        <li class="nav__item"><a href="#" class="nav__link">Servicios</a></li>
+                        <li class="nav__item"><a href="#" class="nav__link">Contacto</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+    </div>
+    
+    <div class="component-container">
+        <h2 class="component-title">Header - Variante 6: Con Borde</h2>
+        <p class="component-description">Header con borde inferior y enlaces con estilo de botón para el enlace activo.</p>
+        
+        <!-- Header Con Borde -->
+        <header class="header header--bordered">
+            <div class="header__container">
+                <h1 class="header__logo">Mi Sitio</h1>
+                <nav class="header__nav">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="#" class="nav__link nav__link--active">Inicio</a></li>
+                        <li class="nav__item"><a href="#" class="nav__link">Acerca de</a></li>
+                        <li class="nav__item"><a href="#" class="nav__link">Servicios</a></li>
+                        <li class="nav__item"><a href="#" class="nav__link">Contacto</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+    </div>
+</body>
+</html>

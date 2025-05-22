@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contacto</title>
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <link rel="stylesheet" href="../assets/css/contact.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__container">
+            <h1 class="header__logo"><a href="../index.html"><img src="../assets/images/Logo/icono_header.png"></a></h1>
+            <nav class="header__nav">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="../index.html" class="nav__link nav__link--active">Inicio</a></li>
+                    <li class="nav__item"><a href="login.html" class="nav__link">Login</a></li>
+                    <li class="nav__item"><a href="registro.html" class="nav__link">Registro</a></li>
+                    <li class="nav__item"><a href="contact.html" class="nav__link">contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+
+        <section class="contact">
+            <div class="contact__container">
+                <div class="contact__info">
+                    <h2 class="contact__title">Información de Contacto</h2>
+                    <p class="contact__text">Puedes contactarnos a través de los siguientes medios o utilizando el
+                        formulario de contacto.</p>
+
+                    <div class="contact__details">
+                        <div class="contact__detail">
+                            <div class="contact__icon">📍</div>
+                            <div class="contact__detail-content">
+                                <h3 class="contact__detail-title">Dirección</h3>
+                                <p class="contact__detail-text">Avenida siempre viva # 14-36 - Medellin Colombia.</p>
+                            </div>
+                        </div>
+
+                        <div class="contact__detail">
+                            <div class="contact__icon">📞</div>
+                            <div class="contact__detail-content">
+                                <h3 class="contact__detail-title">Teléfono</h3>
+                                <p class="contact__detail-text">(315) 586-7790</p>
+                            </div>
+                        </div>
+
+                        <div class="contact__detail">
+                            <div class="contact__icon">✉️</div>
+                            <div class="contact__detail-content">
+                                <h3 class="contact__detail-title">Email</h3>
+                                <p class="contact__detail-text">pgdl@hotmail.com</p>
+                            </div>
+                        </div>
+
+                        <div class="contact__detail">
+                            <div class="contact__icon">⏰</div>
+                            <div class="contact__detail-content">
+                                <h3 class="contact__detail-title">Horario</h3>
+                                <p class="contact__detail-text">Lunes a Viernes: 9:00 - 17:30</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact__form-container">
+                    <h2 class="contact__form-title">Envíanos un Mensaje</h2>
+                    <form class="contact__form">
+                        <div class="form__group">
+                            <label for="name" class="form__label">Nombre</label>
+                            <input type="text" id="name" name="name" class="form__input" required>
+                        </div>
+
+                        <div class="form__group">
+                            <label for="email" class="form__label">Email</label>
+                            <input type="email" id="email" name="email" class="form__input" required>
+                        </div>
+
+                        <div class="form__group">
+                            <label for="subject" class="form__label">Asunto</label>
+                            <input type="text" id="subject" name="subject" class="form__input" required>
+                        </div>
+
+                        <div class="form__group">
+                            <label for="message" class="form__label">Mensaje</label>
+                            <textarea id="message" name="message" class="form__textarea" rows="5" required></textarea>
+                        </div>
+
+                        <button type="submit" class="form__button">Enviar Mensaje</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <section class="map">
+            <div class="map__container">
+                <h2 class="map__title">Nuestra Ubicación</h2>
+                <div class="map__placeholder">
+                    <!-- Aquí iría un mapa real en una implementación completa -->
+                    <div class="map__image-placeholder"><iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.43248338046!2d-75.54798622627152!3d6.3379871252939575!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e442f11a205b239%3A0xa3974aa926dbfac1!2sCesde%20sede%20norte!5e0!3m2!1ses-419!2sco!4v1746838419332!5m2!1ses-419!2sco"
+                            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+                </div>
+            </div>
+        </section>
+
+
+    </main>
+
+    <footer class="footer">
+        <div class="footer__container">
+            <div class="footer__info">
+                <h3 class="footer__logo">Progreso y Gestion Para El desarrollo Local</h3>
+            </div>
+
+            <div class="footer__contact">
+                <h4 class="footer__heading">Contacto</h4>
+                <address>
+                    <p>Email: pgdl@hotmail.com</p>
+                    <p>Teléfono: (315) 586-7790</p>
+                </address>
+            </div>
+        </div>
+
+        <div class="footer__bottom">
+            <p>&copy; 2025 PGDL. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+</body>
+
+</html>

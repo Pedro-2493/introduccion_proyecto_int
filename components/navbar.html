@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Componente Navbar</title>
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <link rel="stylesheet" href="../assets/css/components/navbar/navbar.css">
+    <style>
+        .component-container {
+            margin: 2rem 0;
+            padding: 2rem;
+            border: 1px solid var(--color-light-dark);
+            border-radius: var(--border-radius-md);
+        }
+        
+        .component-title {
+            margin-bottom: 1rem;
+            color: var(--color-primary);
+        }
+        
+        .component-description {
+            margin-bottom: 2rem;
+            color: var(--text-medium);
+        }
+    </style>
+</head>
+<body>
+    <div class="component-container">
+        <h2 class="component-title">Navbar - Variante 1: Estándar</h2>
+        <p class="component-description">Menú de navegación básico con logo a la izquierda y enlaces a la derecha.</p>
+        
+        <!-- Navbar Estándar -->
+        <nav class="navbar">
+            <div class="navbar__container">
+                <a href="#" class="navbar__logo">Mi Sitio</a>
+                <input type="checkbox" id="navbar-toggle-1" class="navbar__toggle">
+                <label for="navbar-toggle-1" class="navbar__toggle-label">☰</label>
+                <ul class="navbar__menu">
+                    <li class="navbar__item"><a href="#" class="navbar__link navbar__link--active">Inicio</a></li>
+                    <li class="navbar__item"><a href="#" class="navbar__link">Acerca de</a></li>
+                    <li class="navbar__item"><a href="#" class="navbar__link">Servicios</a></li>
+                    <li class="navbar__item"><a href="#" class="navbar__link">Contacto</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    
+    <div class="component-container">
+        <h2 class="component-title">Navbar - Variante 2: Fondo de Color</h2>
+        <p class="component-description">Menú de navegación con fondo de color y texto claro.</p>
+        
+        <!-- Navbar Fondo de Color -->
+        <nav class="navbar navbar--colored">
+            <div class="navbar__container">
+                <a href="#" class="navbar__logo">Mi Sitio</a>
+                <input type="checkbox" id="navbar-toggle-2" class="navbar__toggle">
+                <label for="navbar-toggle-2" class="navbar__toggle-label">☰</label>
+                <ul class="navbar__menu">
+                    <li class="navbar__item"><a href="#" class="navbar__link navbar__link--active">Inicio</a></li>
+                    <li class="navbar__item"><a href="#" class="navbar__link">Acerca de</a></li>
+                    <li class="navbar__item"><a href="#" class="navbar__link">Servicios</a></li>
+                    <li class="navbar__item"><a href="#" class="navbar__link">Contacto</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    
+    <div class="component-container">
+        <h2 class="component-title">Navbar - Variante 3: Enlaces Subrayados</h2>
+        <p class="component-description">Menú de navegación con efecto de subrayado en los enlaces al pasar el cursor.</p>
+        
+        <!-- Navbar Enlaces Subrayados -->
+        <nav class="navbar navbar--underlined">
+            <div class="navbar__container">
+                <a href="#" class="navbar__logo">Mi Sitio</a>
+                <input type="checkbox" id="navbar-toggle-3" class="navbar__toggle">
+                <label for="navbar-toggle-3" class="navbar__toggle-label">☰</label>
+                <ul class="navbar__menu">
+                    <li class="navbar__item"><a href="#" class="navbar__link navbar__link--active">Inicio</a></li>
+                    <li class="navbar__item"><a href="#" class="navbar__link">Acerca de</a></li>
+                    <li class="navbar__item"><a href="#" class="navbar__link">Servicios</a></li>
+                    <li class="navbar__item"><a href="#" class="navbar__link">Contacto</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    
+    <div class="component-container">
+        <h2 class="component-title">Navbar - Variante 4: Estilo Caja</h2>
+        <p class="component-description">Menú de navegación con estilo de caja y enlaces activos destacados.</p>
+        
+        <!-- Navbar Estilo Caja -->
+        <nav class="navbar navbar--boxed">
+            <div class="navbar__container">
+                <a href="#" class="navbar__logo">Mi Sitio</a>
+                <input type="checkbox" id="navbar-toggle-4" class="navbar__toggle">
+                <label for="navbar-toggle-4" class="navbar__toggle-label">☰</label>
+                <ul class="navbar__menu">
+                    <li class="navbar__item"><a href="#" class="navbar__link navbar__link--active">Inicio</a></li>
+                    <li class="navbar__item"><a href="#" class="navbar__link">Acerca de</a></li>
+                    <li class="navbar__item"><a href="#" class="navbar__link">Servicios</a></li>
+                    <li class="navbar__item"><a href="#" class="navbar__link">Contacto</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    
+    <div class="component-container">
+        <h2 class="component-title">Navbar - Variante 5: Vertical</h2>
+        <p class="component-description">Menú de navegación con orientación vertical, ideal para barras laterales.</p>
+        
+        <!-- Navbar Vertical -->
+        <nav class="navbar navbar--vertical">
+            <div class="navbar__container">
+                <a href="#" class="navbar__logo">Mi Sitio</a>
+                <input type="checkbox" id="navbar-toggle-5" class="navbar__toggle">
+                <label for="navbar-toggle-5" class="navbar__toggle-label">☰</label>
+                <ul class="navbar__menu">
+                    <li class="navbar__item"><a href="#" class="navbar__link navbar__link--active">Inicio</a></li>
+                    <li class="navbar__item"><a href="#" class="navbar__link">Acerca de</a></li>
+                    <li class="navbar__item"><a href="#" class="navbar__link">Servicios</a></li>
+                    <li class="navbar__item"><a href="#" class="navbar__link">Contacto</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    
+    <div class="component-container">
+        <h2 class="component-title">Navbar - Variante 6: Centrado</h2>
+        <p class="component-description">Menú de navegación con logo y enlaces centrados.</p>
+        
+        <!-- Navbar Centrado -->
+        <nav class="navbar navbar--centered">
+            <div class="navbar__container">
+                <a href="#" class="navbar__logo">Mi Sitio</a>
+                <input type="checkbox" id="navbar-toggle-6" class="navbar__toggle">
+                <label for="navbar-toggle-6" class="navbar__toggle-label">☰</label>
+                <ul class="navbar__menu">
+                    <li class="navbar__item"><a href="#" class="navbar__link navbar__link--active">Inicio</a></li>
+                    <li class="navbar__item"><a href="#" class="navbar__link">Acerca de</a></li>
+                    <li class="navbar__item"><a href="#" class="navbar__link">Servicios</a></li>
+                    <li class="navbar__item"><a href="#" class="navbar__link">Contacto</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+</body>
+</html>
