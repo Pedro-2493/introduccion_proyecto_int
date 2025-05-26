@@ -2,16 +2,23 @@
 
 Este proyecto es una página web desarrollada exclusivamente con HTML y CSS, diseñada para mostrar unas vistas de un sitio donde pueden aplicar para ser beneficiarios de subsidios educativos, acceder a una biblioteca virtual, y a clases virtuales, este proyecto lo visualizamos, para facilitar el acceso a la educación a población vulnerable.
 
+## Descripción del proyecto
+
+- Este proyecto esta enfocado en tres problemáticas principales que se presenta a nivel global en el ámbito estudiantil, como son temas relacionados con patrocinios estudiantiles, incentivar el habito de lectura sin necesidad de incurrir en la compra de libros y por ultimo facilitar el acceso a las clases virtuales.
+
+- Basados en las tres problemáticas, el patrocinio es importante porque permite el acceso al estudio para personas con bajos recursos, población vulnerable  y tener espacios e implementos adecuados para el óptimo desarrollo de las actividades. La biblioteca es importante ya que permite el acceso a material didáctico sin necesidad de gasto económico y complementar el conocimiento; Tomar o reforzar las clases de forma virtual para evitar la inasistencia.
+
+- Evitar la deserción escolar por escases de recursos y falta de habilidades de competencia.
+
+
 ## Características
 
-- Desarrollado exclusivamente con HTML y CSS (sin JavaScript ni frameworks)
-- Diseño responsive que se adapta a diferentes tamaños de pantalla
-- Estructura semántica utilizando las etiquetas HTML5 apropiadas
-- Metodología BEM (Block, Element, Modifier) para nombrar clases CSS
-- Paleta de colores personalizable mediante variables CSS
-- Estructura de archivos organizada y modular
-- Biblioteca estructurada con paginas de HTML y CSS, y tambien imagenes. 
-- Página de visualización de componentes para facilitar su implementación
+- La primera funcionalidad del aplicativo seria un espacio donde el estudiante se postula por medio de un formulario para acceder a un apoyo económico para que pueda acceder a educación superior y tener competencias laborales.
+
+- La segunda funcionalidad seria un espacio donde los estudiantes puedan acceder a material de apoyo, donde se les brindara la opción de tomar cursos y leer libros sin ningún costo.
+
+La tercera funcionalidad seria un espacio donde el estudiante puede ver las clases de manera virtual para así mantener una buena asistencia y no afecte su rendimiento académico, además podrá reforzar lo visto en clase.
+
 
 ## Estructura del Proyecto
 
@@ -106,6 +113,11 @@ El diseño se adapta a diferentes tamaños de pantalla mediante el uso de media 
 
 ## Créditos
 Pedro zamora -- Subsidios -- Index -- Contacto -- README.md --
+- HTML5: Se hizo la creación de la pagina de subsidios con estructura HTML5 y CSS, con etiquetas semanticas <html><head><body><header><h1><nav><ul><li><main><section><div><img><a><h2><p> con la cuales se estructuro conservando las buenas practicas para hacer un encabezado con una imagen y una barra de navegación, para navegar entre paginas, el contenido principal de la pagina contiene un titulo, una tarjeta con una imagen y un parrafo en la parte superior, y un parrafo con un boton que enlaza a contacto en la parte inferior.
+
+- CSS:Se reutilizaron las clases para el header y el footer de nuestra pagina y para cada una de nuestras paginas se crearon clases propias para dar estilo a las mismas.
+
+
 
 Diego arango -- Log in -- Registro --
 
