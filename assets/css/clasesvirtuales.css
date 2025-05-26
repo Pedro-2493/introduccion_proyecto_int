@@ -1,5 +1,5 @@
 .values {
-    padding: var(--spacing-xxl) 10;
+    padding: var(--spacing-xxl) 10px;
 }
 
 .values__container {
@@ -44,7 +44,7 @@ button[type="submit"]:hover {
 .values__grid {
     display: flex;
     flex-wrap: wrap;
-    gap: var(--spacing-lg);
+    gap: var(--spacing-lg) 30px;
     justify-content: center;
     margin-bottom: 40px;
 }

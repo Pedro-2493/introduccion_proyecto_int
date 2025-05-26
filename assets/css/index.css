@@ -92,6 +92,8 @@
     color: var(--text-medium);
 }
 
+
+
 /* Media Queries */
 @media (max-width: 768px) {
     .hero__title {
