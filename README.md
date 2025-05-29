@@ -113,7 +113,13 @@ El diseño se adapta a diferentes tamaños de pantalla mediante el uso de media 
 
 ## Créditos
 Pedro zamora -- Subsidios -- Index -- Contacto -- README.md --
-- HTML5: Se hizo la creación de la pagina de subsidios con estructura HTML5 y CSS, con etiquetas semanticas <html><head><body><header><h1><nav><ul><li><main><section><div><img><a><h2><p> con la cuales se estructuro conservando las buenas practicas para hacer un encabezado con una imagen y una barra de navegación, para navegar entre paginas, el contenido principal de la pagina contiene un titulo, una tarjeta con una imagen y un parrafo en la parte superior, y un parrafo con un boton que enlaza a contacto en la parte inferior.
+- HTML5: Se hizo la creación de la pagina de subsidios con estructura HTML5 y CSS, con etiquetas semanticas 
+
+```html
+<html><head><body><header><h1><nav><ul><li><main><section><div><img><a><h2><p> 
+```
+
+con la cuales se estructuro conservando las buenas practicas para hacer un encabezado con una imagen y una barra de navegación, para navegar entre paginas, el contenido principal de la pagina contiene un titulo, una tarjeta con una imagen y un parrafo en la parte superior, y un parrafo con un boton que enlaza a contacto en la parte inferior.
 
 - CSS:Se reutilizaron las clases para el header y el footer de nuestra pagina y para cada una de nuestras paginas se crearon clases propias para dar estilo a las mismas.
 
