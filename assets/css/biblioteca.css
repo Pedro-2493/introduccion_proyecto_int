@@ -1,25 +1,22 @@
 
 
 .shelf {
-    background-color: #999dd6;
-    border: 3px solid #ccc;
-    border-radius: 8px;
-    margin-bottom: 20px;
-    padding: 15px;
-    width: calc(33% - 30px); 
-    box-sizing: border-box;
-    display: flow-root;
-    flex-wrap: wrap;
+  background-color: #999dd6;
+  border: 3px solid #ccc;
+  border-radius: 8px;
+  padding: 15px;
+  width: 300px; /* tamaño fijo controlado */
+  box-sizing: border-box;
 }
 
 .shelf h2 {
     color: #292626;
-    margin-top: 123;
+    margin-top: 12px; /* 123 no es válido */
 }
 
 .shelf ul {
     list-style: none;
-    padding: 00;
+    padding: 0;
 }
 
 .shelf li {
@@ -32,21 +29,24 @@
 }
 
 .values {
-    padding: var(--spacing-xxl) 10;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columnas iguales */
+  gap: 20px; /* espacio entre tarjetas */
+  padding: 40px 20px;
+  justify-items: center; /* centra las tarjetas dentro de cada celda */
 }
 
 .values__container {
-    max-width: var(--container-max-width);
-    margin: 1 auto;
-    padding: 1 var(--container-padding);
+  grid-column: 1 / -1; /* hace que el h1 ocupe todo el ancho */
+  text-align: center;
+  margin-bottom: 20px;
 }
 
-.values__title {
-    text-align: center;
-    color: white;
-
+.values__container {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 30px;
 }
-
 
 
 
