@@ -1,11 +1,10 @@
 .values {
-    padding: var(--spacing-xxl) 10px;
+    padding: var(--spacing-xxl) 10;
 }
 
 .values__container {
-    max-width: var(--container-max-width);
-    margin: 1 auto;
-    padding: 1 var(--container-padding);
+    margin: 10px auto;
+    padding: 10px;
 }
 
 .values__title {
@@ -24,47 +23,36 @@ input[type="text"] {
 }
 
 
-
-
-button[type="submit"] {
-    padding: 10px 15px;
-    background-color: #9b59b6;
-    ;
-    color: white;
-    border: none;
-    border-radius: 0 5px 5px 0;
-    cursor: pointer;
-    font-size: 16px;
-}
-
-button[type="submit"]:hover {
-    background-color: #ff7cbf
-}
-
 .values__grid {
     display: flex;
-    flex-wrap: wrap;
-    gap: var(--spacing-lg) 30px;
+    /* flex-wrap: wrap; */
+    margin: 0 30px;
+    gap: var(--spacing-lg);
     justify-content: center;
     margin-bottom: 40px;
 }
 
+.value__image {
+    display: block;
+    margin: 0 auto;
+}
+
+
 .value {
-    flex: 1;
-    min-width: 200px;
-    max-width: 250px;
-    text-align: center;
-    padding: var(--spacing-lg);
-    border-radius: var(--border-radius-md);
-    background-color: var(--text-white);
-    box-shadow: var(--shadow-md);
-    transition: transform var(--transition-normal);
-    justify-items: center;
+    position: relative;
+    /* Necesario para posicionar el botón */
+    height: 300px;
+    /* Ajusta según lo que necesites */
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
 }
 
 .value:hover {
     transform: translateY(-5px);
-    background-color: #9b59b6;
+    background-color: #eec1e4;
 
 }
 
@@ -73,19 +61,36 @@ button[type="submit"]:hover {
 
 .value__title {
     color: var(--color-primary);
+    text-align: center;
     margin-bottom: var(--spacing-sm);
+
 }
 
 .value__text {
     color: var(--text-medium);
     text-align: center;
+    font-size: 16px;
+
+
 
 
 }
 
-button:hover {
+/* Estilo y posición para el botón */
+.button {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px 15px;
+    background-color: #9b59b6;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background 0.3s ease;
+}
+
+.button:hover {
     background: #ff7cbf;
-
-
-
 }
